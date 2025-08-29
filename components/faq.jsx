@@ -38,16 +38,16 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center px-4 py-16">
+    <div className="pt-[56px] pr-[165px] pb-[56px] pl-[165px] gap-[52px] bg-[rgba(0,0,0,1)]">
       
-      <div className="w-300">
+      <div className="">
         <h1 className="text-4xl mt-[-25px]  font-bold text-center mb-2">
           Frequently asked questions
         </h1>
         <p className="text-center text-sm text-gray-400 mb-10">
           Everything you need to know about <span className="font-semibold">CRETESPACE</span>
         </p>
-        <FadeInSection>
+        
         <div className="space-y-8">
           {faqs.map((faq, index) => (
             <div
@@ -71,11 +71,11 @@ export default function Page() {
             </div>
           ))}
         </div>
-       </FadeInSection>
+      
 
         {/* Still have questions */}
-        <FadeInSection>
-        <div className="mt-16 bg-[rgb(25,25,25)] border border-[rgb(4,59,3)] rounded-xl ml-23 w-255 p-8 text-center ">
+      
+        <div className="rounded-[10px] border-1 pt-[15px] pr-[208px] pb-[15px] pl-[208px] gap-[16px] mt-[52px] bg-[rgba(25,25,25,1)] border-[rgba(47,194,43,0.3)] text-center ">
           <div className="flex justify-center mb-4">
             <img
               src="Ellipse 9 (5).png"
@@ -103,7 +103,7 @@ export default function Page() {
             </h3>
           </button>
         </div>
-        </FadeInSection>
+       
       </div>
       
     </div>

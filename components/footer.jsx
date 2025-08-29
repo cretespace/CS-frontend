@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300">
       {/* CTA Section */}
-      <FadeInSection>
+      
       <div className="bg-gradient-to-b from black to-[rgb(7,47,12)] py-16 text-center">
         <h2 className="text-4xl font-bold text-white mb-4">
           Ready to Start Your Journey?
@@ -104,7 +104,7 @@ export default function Footer() {
         <p>Copyright © {new Date().getFullYear()} All Rights Reserved</p>
         <p className="mt-1">A CRETECAD innovation</p>
       </div>
-      </FadeInSection>
+      
     </footer>
   );
 }

@@ -14,11 +14,12 @@ const plans = [
     image: <img src="Vector (9).png"/>,
     highlighted: false,
     features: [
-      "Basic order tracking",
-      "Cloud storage (2GB)",
-      "Free services, no subscription",
-      "Access to typing & formatting",
-      "Chat support with CRETESPACE agents",
+      "in-app order tracking",
+      "Cloud file storage (2GB)",
+      "pay-per service, no subscription",
+      "Access to  CRETESPACE templates",
+      "Access to typing, design, scanning",
+      "Chat support with CRETESPACE agents"
     ],
   },
   {
@@ -34,8 +35,9 @@ const plans = [
       "Virtual meeting booking",
       "Unlimited cloud storage for team",
       "Dedicated CRETESPACE support agent",
-      "Access to business templates & pro tools",
-      "Team collaboration & task management tools",
+      "Monthly report & analytics dashboard",
+      "Access to business templates & admin tools",
+      " Team collaboration & task management tools",
     ],
   },
   {
@@ -48,16 +50,17 @@ const plans = [
       image: <img src="streamline-plump_graduation-cap-solid.png"/>,
     highlighted: false,
     features: [
-      "Basic order tracking",
-      "Cloud storage (10GB)",
-      "Free services, no subscription",
-      "Access to typing & formatting",
-      "Chat support with CRETESPACE agents",
+      "in-app order tracking",
+      "Cloud file storage (2GB)",
+      "pay-per service, no subscription",
+      "Access to  CRETESPACE templates",
+      "Access to typing, design, scanning",
+      "Chat support with CRETESPACE agents"
     ],
   },
   {
     title: "Business Centre",
-    subtitle: "For Personal Use",
+    subtitle: "For Business centre",
     price: "₦80,000",
     per: "/month",
     button: "Upgrade to Business Centre",
@@ -65,11 +68,12 @@ const plans = [
       image: <img src="fluent_laptop-48-filled.png"/>,
     highlighted: false,
     features: [
-      "Basic order tracking",
-      "Cloud storage (1TB)",
-      "Free services, no subscription",
-      "Access to typing, design, printing, scanning",
-      "Chat support with CRETESPACE agents",
+      "in-app order tracking",
+      "Cloud file storage (2GB)",
+      "pay-per service, no subscription",
+      "Access to  CRETESPACE templates",
+      "Access to typing, design, scanning",
+      "Chat support with CRETESPACE agents"
     ],
   },
 ];
@@ -78,34 +82,34 @@ export default function Pricing() {
   const [billing, setBilling] = useState("monthly");
 
   return (
-    <section className="min-h-screen bg-black flex justify-center items-center px-4 py-16">
-        <FadeInSection>
-      <div className="relative max-w-7xl w-full p-10 rounded-2xl border border-[rgb(8,57,7)]">
+    <section className="bg-[rgba(0,0,0,1)] pl-[165px] pr-[165px] pt-[71px] pb-[81px]">
+    
+      <div className=" rounded-[20px] border-1 border-[rgba(12,82,10,0.7)]">
         {/* Green light glow on top */}
-        <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-20 bg-green-500/30 rounded-full blur-3xl"></div>
+        <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-20 rounded-full blur-3xl"></div>
 
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-2">Choose your Account Type</h2>
-          <p className="text-gray-400 text-sm mb-6">
+        <div className="text-center  ">
+          <h2 className="font-medium text-[40px] text-center mt-[50px]">Choose your Account Type</h2>
+          <p className="font-normal text-sm text-center text-[rgba(255,255,255,0.7)]">
             Choose the account that fits your work, study, or business needs.
           </p>
-          <div className="inline-flex bg-[rgb(0,28,5)] rounded p-1">
+          <div className="inline-flex bg-[rgba(0,28,5,1)] mt-[18px] ">
             <button
               onClick={() => setBilling("monthly")}
-              className={`px-6 py-2 rounded text-sm font-medium transition text-white ${
+              className={`rounded-[5px]  ${
                 billing === "monthly"
-                  ? "bg-[rgb(1,53,0)] text-white"
-                  : "text-gray-300 hover:text-white"
+                  ? "bg-[rgba(1,53,0,1)] text-white font-medium text-sm "
+                  : ""
               }`}
             >
               Monthly
             </button>
             <button
               onClick={() => setBilling("annual")}
-              className={`px-6 py-2 rounded text-sm font-medium transition ${
+              className={`rounded-[5px] ${
                 billing === "annual"
-                  ? "bg-[rgb(1,53,0)] text-white"
+                  ? " bg-[rgba(1,53,0,1)] font-normal text-sm text-[rgba(255,255,255,0.5)] "
                   : "text-gray-300 hover:text-white"
               }`}
             >
@@ -113,35 +117,46 @@ export default function Pricing() {
             </button>
           </div>
         </div>
-
+                {/* pl-[50px] pr-[55px] pb-[55px] gap-2 */}
         {/* Pricing cards */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 ">
+        
+        
+        <div className="grid grid-cols-1 md:grid-cols-4 mt-[26px] gap-3 pl-[50px] pr-[55px] pb-[55px]">
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`flex flex-col p-6 rounded-xl bg-gradient-to-b from black to-[rgb(7,47,12)] border ${
-                plan.highlighted ? "border-[rgb(15,108,12)]" : "border-[rgb(9,40,9)]"
+              className={`flex flex-col p-6 rounded-[20px] bg-gradient-to-b from black to-[rgba(10,69,18,0.85)] border ${
+                plan.highlighted ? "border-[rgb(15,108,12)]" : "border-[rgba(47,194,43,0.2)]"
               }`}
             >
-              <div className="mb-6">
-                 {plan.image}
-                <h3 className="text-2xl font-semibold text-white">{plan.title}</h3>
-                <p className="text-gray-400 text-sm">{plan.subtitle}</p>
+              <div className="">
+                 <div className='mt-[15px]'>{plan.image}</div>
+                <h3 className="font-medium text-[24px] text-[rgba(255,255,255,1)]">{plan.title}</h3>
+                <p className="font-normal text-xs text-[rgba(255,255,255,0.65)]">{plan.subtitle}</p>
               </div>
 
-              <div className="mb-6">
-                <span className="text-5xl font-bold text-white ml-5">{plan.price} <br/></span>
-                <span className="text-gray-400 ml-20">{plan.per}</span>
+              <div className="mt-[28px] pl-[20px] pr-[20px]">
+                <span className="font-bold  text-[40px] text-[rgba(255,255,255,1)] ">{plan.price} <br/></span>
+                <div className="mt-[-10px]  text-center">
+                  <span className="font-normal text-[12px] text-[rgba(255,255,255,0.65)]">{plan.per}</span>
+                </div>
               </div>
+              
 
              
 
               <button
-                className={`w-full py-2 rounded-lg font-semibold text-sm transition ${
+                className={`rounded-[7px] border-1 pt-[2px] pr-[20px] pb-[2px] pl-[20px] gap-[10px] mt-[12px] ${
                   plan.highlighted
-                    ? "bg-[rgb(47,194,43)] text-white "
-                    : "bg-[rgb(6,43,12)] text-white border border-[rgb(47,194,43)]"
-                }`}
+                    ? "bg-[rgba(47,194,43,1)] h-[36px] border-none font-medium text-[12px] text-white "
+                    : "bg-[rgba(10,69,18,0.2)] font-normal text-xs h-[36px]  border border-[rgba(47,194,43,0.25)]"
+                    
+                   
+
+                    
+                }`
+              
+              }
               >
                 {plan.button}
                 
@@ -149,12 +164,12 @@ export default function Pricing() {
 
                
 
-              <ul className="mt-6 space-y-2 text-sm text-gray-300">
+              <ul className="mt-[18px]  text-sm text-gray-300">
                 <div className="">
-                <span>{plan.thing}</span>
+                <span className="font-medium text-[12px] text-[rgba(255,255,255,1)]">{plan.thing}</span>
               </div>
                 {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2">
+                  <li key={idx} className="flex items-center gap-2 font-normal text-[10px] mt-[8px] ">
                      <img src="Vector (10).png"/> {feature}
                   </li>
                 ))}
@@ -163,7 +178,19 @@ export default function Pricing() {
           ))}
         </div>
       </div>
-      </FadeInSection>
+
     </section>
   );
 }
+
+
+// export default function Pricing () {
+//   return (
+//     <section className="bg-[rgba(0,0,0,1)] pl-[165px] pr-[165px] pt-[71px] pb-[81px]">
+//       <div className=" rounded-[20px] border-1 border-[rgba(12,82,10,0.7)]  ">
+//         <h2 className="font-medium text-[40px] text-center">Choose your Account Type</h2>
+//         <p className="font-normal text-sm text-center text-[rgba(255,255,255,0.7)]">Choose the account that fits your work, study, or business needs.</p>
+//       </div>
+//     </section>
+//   )
+// }
