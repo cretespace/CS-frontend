@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Individual () {
     return (
-        <section className='pt-[58px] pr-[163px] pb-[58px] pl-[163px] gap-[46px] bg-[rgba(0,0,0,1)]'>
-                <h2 className='text-center font-medium text-[40px]' >
+        <section className='py-[58px] px-[163px]  gap-[10px] bg-[rgba(0,0,0,1)]'>
+                <h2 className='text-center font-medium text-[30px]' >
                     <span className="text-[rgba(47,194,43,1)]">Individual</span> Success Stories
                 </h2>
-                <div className="gap-[30px] p-[2px] grid md:grid-cols-3 mt-[46px] ">
+                <div className="gap-[30px] p-[2px] grid md:grid-cols-3 mt-[30px] ">
                     <div className="pt-[32px] pr-[24px] pb-[32px] pl-[24px] gap-[32px] bg-[rgba(25,25,25,1)] border-1 border-[rgba(0,0,0,1)]">
                         <div className="flex space-x-2">
                             <img src="Vector (6).png"  /> 
