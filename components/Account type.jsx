@@ -29,7 +29,7 @@ const plans = [
     per: "/month",
     button: "Upgrade to Business",
     thing: 'Features:',
-    image: <img src="Vector (9).png" />,
+    image: <img src="/images/bizPrice.png" />,
     highlighted: false,
     features: [
       "Virtual meeting booking",
