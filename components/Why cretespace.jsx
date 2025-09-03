@@ -2,49 +2,49 @@ import React from "react";
 
 export default function Why () {
     return (
-        <section className="pt-[44px] pb-[44px] gap-[40px] pr-[165px] pl-[165px] gap-[12px] bg-[rgba(0,0,0,1)]">
-            <h2 className="text-center font-medium text-[40px] ">Why Cretespace?</h2>
-            <div className="gap-[85px] mt-[40px] grid md:grid-cols-2 gap-12 items-center">
+        <section className="pt-[44px] pb-[44px]  pr-[165px] pl-[165px] gap-[12px] bg-[rgba(0,0,0,1)]">
+            <h2 className="text-center font-bold text-[30px] font-ebrima">Why CreteSpace?</h2>
+            <div className=" mt-[30px] grid md:grid-cols-2 gap-12 items-center">
                 <div className="gap-[8px] ">
-                        <h3 className="font-bold text-2xl text-[rgba(47,194,43,1)]">100% Virtual Convenience</h3>
-                        <p className="font-normal mt-[8px] text-base text-rgba(255,255,255,1)]">Access all business centre services from your phone or computer without stepping into a physical office. Whether you need a quick document conversion, a full project design, or bulk printing, CRETESPACE lets you order, track, and receive your work entirely online , saving you travel time and effort.</p>
+                        <h3 className="font-bold text-xl text-[#0b8606]">100% Virtual Convenience</h3>
+                        <p className="font-normal mt-[8px] text-sm  text-[#ffffff9f]">Access all business centre services from your phone or computer without stepping into a physical office. Whether you need a quick document conversion, a full project design, or bulk printing, CRETESPACE lets you order, track, and receive your work entirely online , saving you travel time and effort.</p>
                 </div>
                 <div className="flex justify-center">
                     <img className="w-[451px] h-[451px]" src="/te 1.png" alt="" />
                 </div>
             </div>
 
-          <div className="gap-[85px] mt-[12px] grid md:grid-cols-2 gap-12 items-center">
+          <div className=" mt-[10px] grid md:grid-cols-2 gap-12 items-center">
                 <div className="flex justify-center">
                     <img className="w-[451px] h-[451px]" src="/2440137 2.png" alt="" />
                 </div>
 
                 <div className="gap-[8px] ">
-                        <h3 className="font-bold text-2xl text-[rgba(47,194,43,1)]">Access to Verified Experts</h3>
-                        <p className="font-normal mt-[8px] text-base text-rgba(255,255,255,1)]">No matter the task, you have access to CRETESPACE’s team of professionals. From admin support to creative design, our experts ensure your jobs are completed accurately, efficiently, and to the highest standards. You can chat directly with them, share files, and give feedback in real time.</p>
+                        <h3 className="font-bold text-xl text-[#0b8606]">Access to Verified Experts</h3>
+                        <p className="font-normal mt-[8px] text-sm text-[#ffffff9f]">No matter the task, you have access to CRETESPACE’s team of professionals. From admin support to creative design, our experts ensure your jobs are completed accurately, efficiently, and to the highest standards. You can chat directly with them, share files, and give feedback in real time.</p>
                 </div>
 
             </div>
             
 
-            <div className="gap-[85px] mt-[12px] grid md:grid-cols-2 gap-12 items-center">
+            <div className=" mt-[10px] grid md:grid-cols-2 gap-12 items-center">
                 <div className="gap-[8px] ">
-                        <h3 className="font-bold text-2xl text-[rgba(47,194,43,1)]">Secure File Handling</h3>
-                        <p className="font-normal mt-[8px] text-base text-rgba(255,255,255,1)]">Your documents and projects are protected with secure cloud storage and controlled access. You can upload, store, and retrieve files at any time without worrying about loss or unauthorized access. Plus, every file is backed up to prevent accidental deletion.</p>
+                        <h3 className="font-bold text-2xl text-[#0b8606]">Secure File Handling</h3>
+                        <p className="font-normal mt-[8px] text-sm text-[#ffffff9f]">Your documents and projects are protected with secure cloud storage and controlled access. You can upload, store, and retrieve files at any time without worrying about loss or unauthorized access. Plus, every file is backed up to prevent accidental deletion.</p>
                 </div>
                 <div className="flex justify-center">
                     <img className="w-[451px] h-[451px]" src="/ertt 1.png" alt="" />
                 </div>
             </div>
 
-            <div className="gap-[85px] mt-[12px] grid md:grid-cols-2 gap-12 items-center">
+            <div className=" mt-[10px] grid md:grid-cols-2 gap-12 items-center">
                 <div className="flex justify-center">
                     <img className="w-[451px] h-[451px]" src="/freepik__i-need-a-vector-illustration-of-a-different-people__94425 1.png" alt="" />
                 </div>
 
                 <div className="gap-[8px] ">
-                        <h3 className="font-bold text-2xl text-[rgba(47,194,43,1)]">Scalable for Everyone</h3>
-                        <p className="font-normal mt-[8px] text-base text-rgba(255,255,255,1)]">Whether you’re a student working on assignments, a freelancer handling client projects, a business managing admin tasks, or a physical business centre processing orders, CRETESPACE adapts to your needs with tailored features and account types.</p>
+                        <h3 className="font-bold text-2xl text-[#0b8606]">Scalable for Everyone</h3>
+                        <p className="font-normal mt-[8px] text-sm text-[#ffffff9f]">Whether you’re a student working on assignments, a freelancer handling client projects, a business managing admin tasks, or a physical business centre processing orders, CRETESPACE adapts to your needs with tailored features and account types.</p>
                 </div>
 
             </div>

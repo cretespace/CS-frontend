@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import FadeInSection from "./FadeinSection";
+import { CircleMinus, CirclePlus } from "lucide-react";
 
 const faqs = [
   {
@@ -56,11 +57,11 @@ export default function Page() {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center text-left text-lg font-medium hover:text-green-400 transition"
+                className="w-full flex justify-between items-center text-left text-lg font-medium hover:text-green-600 transition"
               >
                 {faq.question}
-                <span className="text-green-400 text-2xl">
-                  {openIndex === index ? "−" : "+"}
+                <span className="text-green-500 text-2xl">
+                  {openIndex === index ? <CircleMinus size={20}/> : <CirclePlus size={20}/>}
                 </span>
               </button>
               {openIndex === index && (
@@ -75,7 +76,7 @@ export default function Page() {
 
         {/* Still have questions */}
       
-        <div className="rounded-[10px] border-1 pt-[15px] pr-[208px] pb-[15px] pl-[208px] gap-[16px] mt-[52px] bg-[rgba(25,25,25,1)] border-[rgba(47,194,43,0.3)] text-center ">
+        <div className="rounded-[10px] border-1 py-[10px] px-[8px] gap-[10px] mt-[52px] bg-[rgba(25,25,25,1)] border-[rgba(47,194,43,0.3)] text-center ">
           <div className="flex justify-center mb-4">
             <img
               src="Ellipse 9 (5).png"
@@ -93,14 +94,12 @@ export default function Page() {
               className="w-10 h-10 rounded-full border-2 border-gray-700 -ml-2 first:ml-0"
             />
           </div>
-          <h2 className="text-2xl font-semibold mb-2">Still have questions?</h2>
-          <p className="text-gray-400 mb-4">
+          <h2 className="text-xl font-semibold mb-1">Still have questions?</h2>
+          <p className="text-gray-400 mb-4 text-sm">
             Didn’t find the answer you were looking for? Our support team is here to assist you.
           </p>
-          <button className="bg-transparent border border-[rgb(33,88,32)] text-black font-semibold px-6 py-2 rounded-lg hover:bg-green-400 transition">
-            <h3 className="text-[rgb(47,194,43)]">
+          <button className="mb-2 bg-transparent border border-[rgb(33,88,32)] text-[rgb(47,194,43)] font-normal font-ebrima px-3 py-1 rounded-lg hover:bg-green-600 hover:text-white transition">
               Get in touch
-            </h3>
           </button>
         </div>
        

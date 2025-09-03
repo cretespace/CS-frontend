@@ -7,7 +7,7 @@ export default function Business () {
                 <span className="text-[rgba(47,194,43,1)]">Business</span> Success Stories
             </h3>
             <div className="p-[2px] gap-[30px] grid md:grid-cols-3 mt-[48px]">
-                <div className="pt-[25px] pr-[15px] pb-[25px] pl-[15px] gap-[10px] rounded-[15.84px] border-1 border-[rgba(255,255,255,0.3)] bg-[rgba(23,23,23,1)]">
+                <div className="pt-[25px] pr-[15px] pb-[10px] pl-[15px] gap-[5px] rounded-[15.84px] border-1 border-[rgba(255,255,255,0.3)] bg-[rgba(23,23,23,1)]">
                     <p className="font-bold text-[74px] mt-[2px] ml[1px] text-[rgba(47,194,43,1)]">“</p>
 
                     <h3 className="font-medium text-[24px] mt-[-40px] text-[rgba(255,255,255,1)]">

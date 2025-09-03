@@ -1,7 +1,11 @@
+import BusinessRegistrationPage from "@/components/forms/RegisterForm";
 import React from "react";
 
 const page = () => {
-  return <div></div>;
+  return <>
+  
+  <BusinessRegistrationPage/>
+  </>;
 };
 
 export default page;

@@ -11,7 +11,7 @@ const plans = [
     per: "/month",
     button: "Current Plan",
     thing: 'Features:',
-    image: <img src="Vector (9).png"/>,
+    image: <img src="Vector (9).png" />,
     highlighted: false,
     features: [
       "in-app order tracking",
@@ -28,9 +28,9 @@ const plans = [
     price: "₦30,000",
     per: "/month",
     button: "Upgrade to Business",
-     thing: 'Features:',
-    image: <img src="Vector (9).png"/>,
-    highlighted: true,
+    thing: 'Features:',
+    image: <img src="/images/bizPrice.png" />,
+    highlighted: false,
     features: [
       "Virtual meeting booking",
       "Unlimited cloud storage for team",
@@ -46,8 +46,8 @@ const plans = [
     price: "₦10,000",
     per: "/month",
     button: "Upgrade to Student",
-     thing: 'Features:',
-      image: <img src="streamline-plump_graduation-cap-solid.png"/>,
+    thing: 'Features:',
+    image: <img src="streamline-plump_graduation-cap-solid.png" />,
     highlighted: false,
     features: [
       "in-app order tracking",
@@ -64,8 +64,8 @@ const plans = [
     price: "₦80,000",
     per: "/month",
     button: "Upgrade to Business Centre",
-     thing: 'Features:',
-      image: <img src="fluent_laptop-48-filled.png"/>,
+    thing: 'Features:',
+    image: <img src="fluent_laptop-48-filled.png" />,
     highlighted: false,
     features: [
       "in-app order tracking",
@@ -82,95 +82,103 @@ export default function Pricing() {
   const [billing, setBilling] = useState("monthly");
 
   return (
-    <section className="bg-[rgba(0,0,0,1)] pl-[165px] pr-[165px] pt-[71px] pb-[81px]">
-    
-      <div className=" rounded-[20px] border-1 border-[rgba(12,82,10,0.7)]">
+    <section className="relative lit-bg pl-[165px] pr-[165px] pt-[71px] pb-[81px] font-ebrima">
+
+      <div className=" rounded-[20px] border-1 border-[rgba(11,128,7,0.7)] ">
         {/* Green light glow on top */}
-        <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-20 rounded-full blur-3xl"></div>
+        {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[3px] rounded-full  bg-gradient-to-r from-transparent via-green-400 to-transparent blur-3xl"></div> */}
 
         {/* Header */}
-        <div className="text-center  ">
+        <div className=" relative text-center  
+        border-t-2 border-transparent
+        before:content-[''] before:absolute before:-top-1 before:left-1/2 before:-translate-x-1/2
+        before:w-1/2 before:h-[2px]
+        before:bg-gradient-to-r before:from-transparent before:via-green-500 before:to-transparent
+        ">
           <h2 className="font-medium text-[40px] text-center mt-[50px]">Choose your Account Type</h2>
           <p className="font-normal text-sm text-center text-[rgba(255,255,255,0.7)]">
             Choose the account that fits your work, study, or business needs.
           </p>
-          <div className="inline-flex bg-[rgba(0,28,5,1)] mt-[18px] ">
+          <div className="flex w-[130px] mx-auto justify-between  bg-[rgba(0,28,5,1)] mt-[18px]  rounded-sm">
             <button
               onClick={() => setBilling("monthly")}
-              className={`rounded-[5px]  ${
-                billing === "monthly"
+              className={`rounded-[5px]  px-2 ml-0 text-gray-500  ${billing === "monthly"
                   ? "bg-[rgba(1,53,0,1)] text-white font-medium text-sm "
                   : ""
-              }`}
+                }`}
             >
               Monthly
             </button>
             <button
               onClick={() => setBilling("annual")}
-              className={`rounded-[5px] ${
-                billing === "annual"
-                  ? " bg-[rgba(1,53,0,1)] font-normal text-sm text-[rgba(255,255,255,0.5)] "
-                  : "text-gray-300 hover:text-white"
-              }`}
+              className={`rounded-[5px] px-2 text-gray-500 ${billing === "annual"
+                  ? " bg-[rgba(1,53,0,1)] font-normal text-sm text-white "
+                  : "text-gray-500 "
+                }`}
             >
               Annual
             </button>
           </div>
         </div>
-                {/* pl-[50px] pr-[55px] pb-[55px] gap-2 */}
+        {/* pl-[50px] pr-[55px] pb-[55px] gap-2 */}
         {/* Pricing cards */}
-        
-        
+
+
         <div className="grid grid-cols-1 md:grid-cols-4 mt-[26px] gap-3 pl-[50px] pr-[55px] pb-[55px]">
           {plans.map((plan, i) => (
             <div
               key={i}
-              className={`flex flex-col p-6 rounded-[20px] bg-gradient-to-b from black to-[rgba(10,69,18,0.85)] border ${
-                plan.highlighted ? "border-[rgb(15,108,12)]" : "border-[rgba(47,194,43,0.2)]"
-              }`}
+              className={`flex flex-col p-3 rounded-[20px] bg-gradient-to-b from black to-[rgba(10,69,18,0.85)] border ${plan.highlighted ? "border-[rgb(15,108,12)]" : "border-[rgba(47,194,43,0.2)]"
+                }
+                transition-all duration-500 
+        hover:bg-[rgba(2,37,20,0.93)]
+        hover:shadow-[0_0_2px_rgba(100,255,180,0.8)]
+        hover:border-green-500
+        hover:scale-105
+        group
+        `}
             >
               <div className="">
-                 <div className='mt-[15px]'>{plan.image}</div>
-                <h3 className="font-medium text-[24px] text-[rgba(255,255,255,1)]">{plan.title}</h3>
-                <p className="font-normal text-xs text-[rgba(255,255,255,0.65)]">{plan.subtitle}</p>
+                <div className='mt-1'>{plan.image}</div>
+                <h3 className="font-medium text-[20px] text-[rgba(255,255,255,1)] pt-2 tracking-wide">{plan.title}</h3>
+                <p className="text-[10px] text-[rgba(255,255,255,0.65)]">{plan.subtitle}</p>
               </div>
 
-              <div className="mt-[28px] pl-[20px] pr-[20px]">
-                <span className="font-bold  text-[40px] text-[rgba(255,255,255,1)] ">{plan.price} <br/></span>
+              <div className="mt-[10px] text-center">
+                <span className="font-bold  text-[30px] text-[rgba(255,255,255,1)] font-sans ">{plan.price} <br /></span>
                 <div className="mt-[-10px]  text-center">
                   <span className="font-normal text-[12px] text-[rgba(255,255,255,0.65)]">{plan.per}</span>
                 </div>
               </div>
-              
 
-             
+
+
 
               <button
-                className={`rounded-[7px] border-1 pt-[2px] pr-[20px] pb-[2px] pl-[20px] gap-[10px] mt-[12px] ${
-                  plan.highlighted
+                className={`text-xs rounded-[7px] border-1 py-[2px] px-[20px]   gap-[10px] mt-[10px] group-hover:bg-[rgba(47,194,43,1)] group-hover:h-[36px] group-hover:border-none group-hover:font-medium group-hover:text-[12px] group-hover:text-white transition-all duration-500 cursor-pointer ${plan.highlighted
                     ? "bg-[rgba(47,194,43,1)] h-[36px] border-none font-medium text-[12px] text-white "
-                    : "bg-[rgba(10,69,18,0.2)] font-normal text-xs h-[36px]  border border-[rgba(47,194,43,0.25)]"
-                    
-                   
+                    : "bg-[rgba(10,69,18,0.2)] font-normal text-xs text-gray-400 h-[36px]  border border-[rgba(47,194,43,0.25)]"
 
-                    
-                }`
-              
-              }
+
+
+
+                  }`
+
+                }
               >
                 {plan.button}
-                
+
               </button>
 
-               
 
-              <ul className="mt-[18px]  text-sm text-gray-300">
+
+              <ul className="mt-[10px]  text-sm text-gray-300">
                 <div className="">
-                <span className="font-medium text-[12px] text-[rgba(255,255,255,1)]">{plan.thing}</span>
-              </div>
+                  <span className="font-medium text-[12px] text-[rgba(255,255,255,1)]">{plan.thing}</span>
+                </div>
                 {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2 font-normal text-[10px] mt-[8px] ">
-                     <img src="Vector (10).png"/> {feature}
+                  <li key={idx} className="flex  items-center gap-2 font-normal text-[8.5px] mt-[4px] ">
+                    <img src="Vector (10).png" /> {feature}
                   </li>
                 ))}
               </ul>

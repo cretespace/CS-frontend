@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar () {
@@ -14,8 +15,13 @@ export default function Navbar () {
         <a href="#">About</a>
         <a href="#">Support</a>
         <a href="#">Login</a>
-        <button className="pt-[4px] pr-[6px] pb-[4px] pl-[6px] gap-[10px] rounded-md bg-[rgba(0,160,212,1)] text-base font-medium leading-[24px] tracking-[0.1px] text-[rgba(background: rgba(255, 255, 255, 1);
-)]">Sign up</button>
+        <button  className="pt-[4px] pr-[6px] pb-[4px] pl-[6px] gap-[10px] rounded-md bg-[rgba(0,160,212,1)] text-base font-medium leading-[24px] tracking-[0.1px] text-[rgba(background: rgba(255, 255, 255, 1);
+)]">
+     <Link href="/register">
+     
+     Sign up
+     </Link>
+     </button>
     </div>
     </nav>
    </section>
