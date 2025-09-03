@@ -20,8 +20,7 @@ import Individual from '@/components/Individual success';
 
 export default function Page () {
   return (
-      <main className="bg-[rgba(0,0,0,1)]">
-        <Navbar/>
+      <main className="">
         <Hero/>
         <How/>
         <Oneplatform/>

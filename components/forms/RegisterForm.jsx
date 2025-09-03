@@ -162,7 +162,7 @@ const BusinessRegistrationPage = () => {
             src="/images/ellipse 8.png"
             alt="Background"
             fill
-            className="object-cover"
+            className="object-cover w-full  "
             priority
           />
         </div>
