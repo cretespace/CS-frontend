@@ -40,7 +40,7 @@ const features=[
 ]
 export default function One () {
     return (
-        <section className="pt-[20px] pr-[164px] pb-[59px] pl-[164px] gap-[10px] bg-[rgba(0,0,0,1)]">
+        <section className="pt-[20px]  pb-[59px]gap-[10px] ">
                 <div className="gap-[46px]">
                 <h2 className="text-center font-bold text-[25px] leading-[100%] tracking-[0%] ">
                         One Platform, Endless Possibilities.

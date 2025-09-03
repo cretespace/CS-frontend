@@ -32,10 +32,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} antialiased  bg-[#0B0000] `}
+        className={`${poppins.variable} antialiased  bg-[#0B0000]`}
       >
         <Navbar/>
-        <div className="">{children}</div>
+        <div className="px-[165px]">{children}</div>
         
       </body>
     </html>
