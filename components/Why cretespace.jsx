@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Why () {
     return (
-        <section className="pt-[44px] pb-[44px]  pr-[165px] pl-[165px] gap-[12px] bg-[rgba(0,0,0,1)]">
+        <section className="pt-[44px] pb-[44px]  gap-[12px] ">
             <h2 className="text-center font-bold text-[30px] font-ebrima">Why CreteSpace?</h2>
             <div className=" mt-[30px] grid md:grid-cols-2 gap-12 items-center">
                 <div className="gap-[8px] ">
@@ -44,7 +44,7 @@ export default function Why () {
 
                 <div className="gap-[8px] ">
                         <h3 className="font-bold text-2xl text-[#0b8606]">Scalable for Everyone</h3>
-                        <p className="font-normal mt-[8px] text-sm text-[#ffffff9f]">Whether you’re a student working on assignments, a freelancer handling client projects, a business managing admin tasks, or a physical business centre processing orders, CRETESPACE adapts to your needs with tailored features and account types.</p>
+                        <p className="font-normal mt-[8px] text-sm text-[#ffffff9f]">Whether you&aos;re a student working on assignments, a freelancer handling client projects, a business managing admin tasks, or a physical business centre processing orders, CRETESPACE adapts to your needs with tailored features and account types.</p>
                 </div>
 
             </div>

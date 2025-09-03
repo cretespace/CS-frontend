@@ -1,13 +1,53 @@
 "use client"
 import { CircleArrowRight } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export default function Hero () {
      
   return (
    
- <div className="w-full ">
-<section className="relative w-full flex justify-start items-center font-ebrima">
+
+      <section className="flex justify-between -mx-[165px] px-[165px] h-[404px]"  style={{
+            backgroundImage: "url('/newhero.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}>
+         <div className="flex flex-col gap-[38px] mt-[51px]">
+                    <h1 className="text-[30px] font-mono sm:text-[54px] md:text-[64px] lg:text-[72px] font-bold  sm:leading-[20px] md:leading-[80px] lg:leading-[80px] tracking-[1px] text-left text-global-3 font-ebrima ">
+                      Skip the Wait,<br />
+                      Skip the Stress.
+                    </h1>
+                    <p className="font-inter text-[18px] text-[#C0C0C0] -mt-5">
+                      Africa's first Cloud-powered Digital business centre.
+                    </p>
+
+                    <div className="flex  items-center w-full gap-[16px] font-ebrima">
+                     <button 
+                      className="bg-[#00A0D4] p-[10px] rounded-[10px] gap-[8px] w-[195px] flex justify-center font-[500] items-center"
+                        >
+                        Get started for free
+                       <CircleArrowRight size={20}/>
+                        </button>
+                    <p className="font-[500]">
+                      Learn more
+                    </p>
+                  </div>
+                  </div>
+       <Image 
+                  src="/GUY2 1.png" 
+                  alt="Hero Image" 
+                  width={416} height={404}
+                  className="object-cover  "
+                  />
+      </section>
+    )
+}
+
+
+
+
+{/* <section className=" w-full flex justify-start items-center font-ebrima">
         <div 
           className="w-full flex justify-center items-center"
           style={{
@@ -16,7 +56,7 @@ export default function Hero () {
             backgroundPosition: 'center'
           }}
         >
-          <div className="w-full max-w-full mx-auto px-[81px] sm:px-[162px]">
+          <div className="w-full max-w-full mx-auto ">
             <div className="flex flex-row lg:flex-row justify-between items-center w-full py-[25px] sm:py-[50px]">
               <div className="flex flex-col justify-start items-center w-full lg:w-auto mb-[2px] sm:mb-[1px]">
                 <div className="flex flex-col gap-[19px] sm:gap-[38px] justify-start items-center w-full">
@@ -46,14 +86,11 @@ export default function Hero () {
                 <img 
                   src="/GUY2 1.png" 
                   alt="Hero Image" 
-                  width={330} height={200}
-                  className="   mx-auto lg:top-[1.3rem] right-40 absolute z-0 mt-0.5"
+                  width={416} height={404}
+                  className="  "
                   />
               </div>
             </div>
           </div>
         </div>
-      </section>
-                  </div>
-    )
-}
+      </section> */}

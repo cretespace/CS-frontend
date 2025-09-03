@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Navbar () {
      return (
-   <section className=" bg-[rgba(11,0,0,1)] border-b-[rgba(47,194,43,0.5)]  pt-[17px] pr-[40px] pb-[17px] pl-[40px] border-b justify-between" >
+   <section className="  border-b-[rgba(47,194,43,0.5)]  pt-[17px]  pb-[17px] border-b justify-between" >
    
-    <nav className=" w[476px]  flex justify-between items-center">
+    <nav className=" px-[40px] flex justify-between items-center">
          <div>
          <img src="/Crete Logo.png" alt="crete logo" width={86} height={29}/>
     </div>

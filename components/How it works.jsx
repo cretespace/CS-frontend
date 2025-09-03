@@ -25,7 +25,7 @@ const data = [
 ]
 export default function How() {
     return (
-        <section className=" pt-[60px] pr-[165px] pb-[60px] pl-[165px] gap-[10px] bg-[rgba(0,0,0,1)] z-999">
+        <section className=" pt-[60px] pr-[165px] pb-[60px] pl-[165px] gap-[10px] z-999">
             <div className=" gap-[48px]">
                 <h2 className="text-center font-medium text-[25px] leading-[100%] tracking-[0%] text-[rgba(255,255,255,1)]">
                     How it Works
