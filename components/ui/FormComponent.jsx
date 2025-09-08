@@ -76,10 +76,7 @@ const FormComponent = ({array,link, signup,accountType,setAccountType, cta,botto
         
         {accountType === 'Business Center' && 
         <>
-     { array?.slice(5,6).map((item, index) => (
-              <FormInput key={index} two phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
-            ))
-        }
+    
 
         { array?.slice(6,8).map((item, index) => (
               <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
