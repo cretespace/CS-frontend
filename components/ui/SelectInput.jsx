@@ -23,7 +23,7 @@ function SelectInput({ label, placeholder, type }) {
     return (
       <div className="flex flex-col">
         <label className="mb-1 text-sm">{label}</label>
-        <div className="relative">
+        <div className="relative  bg-[#062D0866]">
           <select
             className="appearance-none w-full p-2 h-[45px] rounded-[8px] border border-[#2FC22B1A] text-white/70 pr-10"
           >
@@ -44,10 +44,10 @@ function SelectInput({ label, placeholder, type }) {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <label className="mb-1 text-sm">{label}</label>
 
-      <div className="relative p-2 appearance-none rounded h-[45px]  rounded-[8px] border-[#2FC22B1A]  border-[1.22px]   text-white/70">
+      <div className="relative p-2 appearance-none rounded h-[45px]  bg-[#062D0866] rounded-[8px] border-[#2FC22B1A]  border-[1.22px]   text-white/70">
 
       <input
         type={type}

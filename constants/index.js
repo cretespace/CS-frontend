@@ -125,10 +125,12 @@ export const formItems = {
     { label: "Name of School / Institution", placeholder: "Name of School / Institution", type: "text" },
     { label: "Registration No.", placeholder: "Registration No.", type: "text" },
     { label: "Country", placeholder: "Country", type: "text" },
-        { label: "Gender", placeholder: "Gender", type: "text" },
+    { label: "Gender", placeholder: "Gender", type: "text" },
     { label: "Date of Birth", placeholder: "", type: "date" },
     { label: " Phone Number", placeholder: " Phone Number", type: "phone" },
+  
     { label: " Upload School ID", upload:true },
+  
     { label: "Email", placeholder: "Email", type: "email" },
      { label: "Password", placeholder: "Password", type: "password" },
     { label: "Confirm Password", placeholder: "Confirm Password", type: "password" },
@@ -139,12 +141,14 @@ export const formItems = {
     { label: "Business Name", placeholder: "Business Name", type: "text" },
     { label: "Business Address", placeholder: "Business Address", type: "text" },
     { label: "Contact Person Name", placeholder: "Contact Person Name", type: "text" },
-    { label: "Contact Person role", placeholder: "Password", type: "password" },
+    { label: "Contact Person role", placeholder: "Manager", type: "password" },
     { label: "Country", placeholder: "Country", type: "select" },
     { label: "Business Phone Number", placeholder: "Business Phone Number", type: "phone" },
     { label: "Number of Employees", placeholder: "Number of Employees", type: "text" },
     { label: "Why do you want to partner with CRETESPACE?", placeholder: "Answer", type: "text" },
 
+    { label: "Upload Office Photo" },
+   
     { label: "Email", placeholder: "Password", type: "email" },
     { label: "Password", placeholder: "Password", type: "password" },
     { label: "Confirm Password", placeholder: "Confirm Password", type: "password" },

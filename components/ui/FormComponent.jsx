@@ -13,7 +13,8 @@ const FormComponent = ({array,link, signup,accountType,setAccountType, cta,botto
         "Business Center",
       ];
   return (
-    <form  className='p-10 rounded-[18.94px] flex flex-col gap-[28px]   [background:linear-gradient(to_right,_#00000030_0%,_#062d0831_10%,_#062D0866_70%,_#00000030_100%)] border-[0.95px] border-[#0C520A80]'>
+      <form  className='p-10 rounded-[18.94px] flex flex-col gap-[28px]   [background:linear-gradient(to_right,_#00000030_0%,_#062d0831_10%,_#062D0866_70%,_#00000030_100%)] border-[0.95px] border-[#0C520A80]'>
+        {/* acount type navigation */}
         {signup &&  
         <div className="flex items-center justify-cemter gap-[16px] rounded-[5px] bg-black/15 w-[351px] h-[32px] px-[8px] py-[4px]">
           {accountTypeArray.map((item, index) => (
@@ -23,61 +24,84 @@ const FormComponent = ({array,link, signup,accountType,setAccountType, cta,botto
           ))}
         </div>}
 
-          { array?.slice(0,3).map((item, index) => (
-            <div key={index} >
+        {/* form inputs */}
+        { array?.slice(0,3).map((item, index) => (
+            <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
+        ))}
 
-              <FormInput label={item.label} placeholder={item.placeholder} type={item.type}/>
-
-            </div>
+        {/* flexed components */}
+        <div className="flex gap-4">
+          {array?.slice(3,5)
+            .map((item, index) => (
+              <div className="flex-1" key={index}>
+                <SelectInput
+                  label={item.label}
+                  placeholder={item.placeholder}
+                  type={item.type}
+                />
+              </div>
           ))}
-
-          <div className="flex gap-4">
-  
-    {array?.slice(3,5)
-      .map((item, index) => (
-        <div className="flex-1" key={index}>
-          <SelectInput
-            label={item.label}
-            placeholder={item.placeholder}
-            type={item.type}
-          />
         </div>
-      ))}
 
-      
-      
-  </div>
+          { (accountType !== 'Student' ) 
+          && array?.slice(5,6).map((item, index) => (
+              <FormInput key={index} two phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
+            ))
+          
+        }
 
-<div className='flex gap-5'>
-{accountType === 'Student' && array?.slice(5,7).map((item, index) => (
-  <div className="flex-1" key={index}>
-    <SelectInput
-      label={item.label}
-      placeholder={item.placeholder}
-      type={item.type}
-    />
-  </div>
-))}
-</div>
-   
+        
 
- {accountType !== 'Student' &&  array?.slice(5,6).map((item, index) => (
+        {accountType === 'Student' && 
+        <>
+        <div className='flex gap-5'>
+              {array?.slice(5,7).map((item, index) => (
+                <div className="flex-1" key={index}>
+                    <SelectInput
+                      label={item.label}
+                      placeholder={item.placeholder}
+                      type={item.type}
+                    />
+                </div>
+              ))}
+        </div> 
 
-        <FormInput key={index}  two phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
-            
-          ))}
+        { array?.slice(7,8).map((item, index) => (
+              <FormInput key={index} two phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
+            ))
+        }
+        </>
+        }
+       
+        
+        {accountType === 'Business Center' && 
+        <>
+     { array?.slice(5,6).map((item, index) => (
+              <FormInput key={index} two phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
+            ))
+        }
 
-{(accountType === 'Student' || accountType === 'Business Center') && <div><Upload accountType={accountType}/></div> }
+        { array?.slice(6,8).map((item, index) => (
+              <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
+            ))
+        }
+        </>
+          
+        }
+
+
+        {/* upload input */}
+        {(accountType === 'Student' || accountType === 'Business Center') && <div><Upload accountType={accountType}/></div> } 
           
 
-{ (accountType !== 'Student' && accountType !== 'Business Center') 
-  ? array?.slice(6,11).map((item, index) => (
-      <FormInput key={index} phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
-    ))
-  : array?.slice(9,12).map((item, index) => (
-      <FormInput key={index} phone='+234' label={item.label} placeholder={item.placeholder} type={item.type}/>
-    ))
-}
+        { (accountType !== 'Student' && accountType !== 'Business Center') 
+          ? array?.slice(6,11).map((item, index) => (
+              <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
+            ))
+          : array?.slice(9,12).map((item, index) => (
+              <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
+            ))
+        }
 
 
           <CustomButton text={cta}/>
