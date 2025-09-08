@@ -26,7 +26,7 @@ const Upload = ({accountType}) => {
 
         <div className='flex justify-between'>
 
-        <p className='font-semibold text-[#2FC22B] text-[10px] text-white/60 mt-2 ' > 09000 </p>
+        <p className='font-semibold text-[#2FC22B] text-[10px] text-white/60 mt-2 ' > 12300 </p>
         <p className='font-semibold text-[#2FC22B] text-[10px] text-white/60 mt-2 ' > 100% </p>
         </div>
         </div>
