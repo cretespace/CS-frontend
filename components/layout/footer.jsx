@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-black text-gray-300">
       {/* CTA Section */}
 
-      <div className="bg-gradient-to-b from black to-[rgb(7,47,12)] py-16 text-center px-5 lg:-mx-[165px]">
+      <div className="bg-gradient-to-b h-[252px] from black to-[rgb(7,47,12)] py-16 text-center px-5 lg:-mx-[165px]">
         <h2 className="lg:text-[40px] font-[500] font-helvetica  text-white ">
           Ready to Start Your Journey?
         </h2>

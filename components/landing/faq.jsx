@@ -85,8 +85,7 @@ export default function Page() {
         </div>
 
         {/* Still have questions */}
-
-        <div className="rounded-[10px] h-[201px] border-1 py-[10px] px-[8px] gap-[10px] mt-[52px] bg-[rgba(25,25,25,1)] border-[rgba(47,194,43,0.3)] text-center ">
+        <div className="rounded-[10px] mx-10 h-[201px] border-1 py-[10px] px-[8px] gap-[10px] mt-[52px] bg-[rgba(25,25,25,1)] border-[rgba(47,194,43,0.3)] text-center ">
           <div className="flex justify-center mb-4">
             <img
               src="/images/persone.svg"
@@ -107,7 +106,7 @@ export default function Page() {
           <h2 className="text-[20px] font-[400] font-helvetica ">
             Still have questions?
           </h2>
-          <p className="text-white/70 mb-4 text-sm leading-[22px]">
+          <p className="text-white/60 mb-4 text-sm leading-[22px]">
             Didn’t find the answer you were looking for? Our support team is
             here to assist you.
           </p>
