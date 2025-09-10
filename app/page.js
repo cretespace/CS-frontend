@@ -23,17 +23,17 @@ export default function Page() {
       <Hero />
       <How />
       <Oneplatform />
-      <hr className=" border-[rgb(4,59,3)] lg:-mx-[165px]" />
+      <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
       <Whycretespace />
-      <hr className=" border-[rgb(4,59,3)] lg:-mx-[165px]" />
+      <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
       <Business />
-      <hr className=" border-[rgb(4,59,3)] lg:-mx-[165px]" />
+      <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
       <Individual />
-      <hr className=" border-[rgb(4,59,3)] lg:-mx-[165px]" />
+      <hr className="border-[1px]  border-[#2FC22B80] lg:-mx-[165px]" />
       <Accounttype />
-      <hr className=" border-[rgb(4,59,3)] lg:-mx-[165px]" />
+      <hr className="border-[1px] border-[#2FC22B80] lg:-mx-[165px]" />
       <Faq />
-      <hr className=" border-[rgb(4,59,3)] lg:-mx-[165px]" />
+      <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
       <Footer />
     </main>
   );

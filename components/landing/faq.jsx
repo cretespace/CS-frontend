@@ -44,7 +44,7 @@ export default function Page() {
   };
 
   return (
-    <div className="py-[56px]  gap-[52px] bg-[rgba(0,0,0,1)]">
+    <div className="py-[40px]  gap-[52px] bg-[rgba(0,0,0,1)]">
       <div className="">
         <h1 className="text-[40px] font-helvetica mt-[-25px]  font-[500] text-center mb-2">
           Frequently asked questions
