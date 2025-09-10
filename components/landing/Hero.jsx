@@ -7,7 +7,7 @@ import React from "react";
 export default function Hero() {
   return (
     <section
-      className="flex justify-between -mx-[162px] px-[162px] h-[404px]"
+      className="lg:flex justify-between lg:-mx-[162px] lg:px-[162px] -mx-5 px-5 min-h-[404px]"
       style={{
         backgroundImage: "url('/herobg.jpg')",
         backgroundSize: "cover",
@@ -15,7 +15,7 @@ export default function Hero() {
       }}
     >
       <div className="flex flex-col gap-[38px] mt-[51px]">
-        <h1 className="font-ebrima text-[72px] font-[700]  leading-[80px] tracking-[1px]  ">
+        <h1 className="font-ebrima text-[52px]  lg:text-[72px] font-[700]  leading-[80px] tracking-[1px]  ">
           Skip the Wait,
           <br />
           Skip the Stress.
@@ -25,19 +25,17 @@ export default function Hero() {
         </p>
 
         <div className="flex  items-center w-full gap-[16px] ">
-         <Link href={'/signUp'} className="bg-[#00A0D4] p-[10px] text-[16px] rounded-[10px] gap-[8px] w-[195px] h-[44px] flex justify-center font-[500] items-center">
+          <Link
+            href={"/signUp"}
+            className="bg-[#00A0D4] p-[10px] text-[16px] rounded-[10px] gap-[8px] w-[195px] h-[44px] flex justify-center font-[500] items-center"
+          >
             Get started for free
             <CircleArrowRight size={20} />
           </Link>
           <p className="font-[500] text-[16px]">Learn more</p>
         </div>
       </div>
-      <img
-        src="/landing/guy.svg"
-        alt="Hero Image"
-       
-        className="object-cover  "
-      />
+      <img src="/landing/guy.svg" alt="Hero Image" className="object-cover  " />
     </section>
   );
 }

@@ -4,13 +4,14 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300">
       {/* CTA Section */}
-      
-      <div className="bg-gradient-to-b from black to-[rgb(7,47,12)] py-16 text-center -mx-[165px]">
-        <h2 className="text-4xl font-bold text-white mb-4">
+
+      <div className="bg-gradient-to-b from black to-[rgb(7,47,12)] py-16 text-center px-5 lg:-mx-[165px]">
+        <h2 className="lg:text-[40px] font-[500] font-helvetica  text-white ">
           Ready to Start Your Journey?
         </h2>
-        <p className="text-gray-400 text-sm mb-6">
-          Join <span className="font-semibold">CRETESPACE</span> today and experience a smarter way to work, learn, and collaborate.
+        <p className="text-white/60  mb-7">
+          Join <span className="font-semibold">CRETESPACE</span> today and
+          experience a smarter way to work, learn, and collaborate.
         </p>
         <button className="bg-[rgb(47,194,43)] text-white font-semibold px-4 h-10 rounded-lg transition">
           Create your account
@@ -68,10 +69,10 @@ export default function Footer() {
           <p className="font-medium text-white">Office Address</p>
           <p>70 Latief Adegboyega Street, Off Ago Palace Way, Okota, Lagos</p>
           <div className="flex gap-4 mt-3 text-lg">
-           <img src="/icons/twitter.svg"/>
-           <img src="/icons/whatsapp.svg"/>
-           <img src="/icons/facebook.svg"/>
-           <img src="/icons/instagram.svg"/>
+            <img src="/icons/twitter.svg" />
+            <img src="/icons/whatsapp.svg" />
+            <img src="/icons/facebook.svg" />
+            <img src="/icons/instagram.svg" />
           </div>
         </div>
 
@@ -103,7 +104,6 @@ export default function Footer() {
         <p>Copyright © {new Date().getFullYear()} All Rights Reserved</p>
         <p className="mt-1">A CRETECAD innovation</p>
       </div>
-      
     </footer>
   );
 }

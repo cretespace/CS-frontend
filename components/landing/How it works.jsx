@@ -26,21 +26,21 @@ const data = [
 ];
 export default function How() {
   return (
-    <section className=" py-[60px] mb-20 gap-[10px] ">
+    <section className=" py-[60px] mb-[6.4rem] -mt-4 gap-[10px] ">
       <div className="gap-[48px]">
         <h2 className="text-center font-helvetica font-[500] text-[40px] ">
-          How it Works
+          How It Works
         </h2>
-        <div className="  grid grid-cols-3 gap-[30px]  mt-9">
+        <div className="   lg:grid grid-cols-3 gap-[30px]  mt-10">
           {data.map((articles, i) => (
-            <div key={i} className="h-[72px]">
+            <div key={i} className="lg:h-[72px] lg:w-[350px] my-5 lg:my-0">
               <div className="gap-[12px] flex">
                 <Image src={articles.icon} width={24} height={24} alt="icons" />
                 <h3 className="font-[500] text-[18px] leading-[28px] tracking-[0px] text-[#2FC22B] font-helvetica">
                   {articles.title}
                 </h3>
               </div>
-              <p className="font-[400] text-[14px] leading-[24px] font-inter tracking-[0.1px] text-[#FFFFFF] w-[350px] h-[72px] p-2">
+              <p className="font-[300] text-[14px] leading-[24px] font-inter tracking-[0.1px] text-[#FFFFFF]  h-[72px] p-2">
                 {articles.content}
               </p>
             </div>

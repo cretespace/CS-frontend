@@ -13,7 +13,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const Page = () => {
-  const [accountType, setAccountType] = useState(Cookies.get("accountType") || "Individual");
+  const [accountType, setAccountType] = useState(
+    Cookies.get("accountType") || "Individual"
+  );
 
   let signupInfo;
   if (accountType === "Individual") {
@@ -22,7 +24,7 @@ const Page = () => {
     signupInfo = businessSignupInfo;
   } else if (accountType === "Student") {
     signupInfo = studentSignupInfo;
-  } else if (accountType === "Business Center" ) {
+  } else if (accountType === "Business Center") {
     signupInfo = bCenterSignupInfo;
   }
 
@@ -35,11 +37,13 @@ const Page = () => {
       }}
       className="min-h-screen -mx-[162px] px-[162px]"
     >
-      <div className="flex gap-[5rem] pt-[85px] ">
+      <div className="lg:flex gap-[5rem] pt-[85px] ">
         {/* Left Section */}
-        <div className="flex-[0.5] max-h-[85vh] overflow-scroll scroll-hide flex-shrink-0 flex-col gap-[54px] sticky top-[80px] h-fit hidden md:flex">
+        <div className="flex-[0.5]  max-h-[85vh] overflow-scroll scroll-hide flex-shrink-0 flex-col gap-[54px] sticky top-[80px] h-fit hidden md:flex">
           <div>
-            <h1 className="font-[500] text-[36px] font-helvetica">Create your Account</h1>
+            <h1 className="font-[500] text-[36px] font-helvetica">
+              Create your Account
+            </h1>
             <h2 className="text-[#2FC22B] font-[500] text-[24px]">
               {accountType} Account
             </h2>
@@ -49,7 +53,9 @@ const Page = () => {
             {signupInfo?.map((item, index) => (
               <div key={index} className="flex flex-col gap-[12px]">
                 <Icon src={item.icon} />
-                <h3 className="font-[400] text-[18px] font-inter">{item.text}</h3>
+                <h3 className="font-[400] text-[18px] font-inter">
+                  {item.text}
+                </h3>
                 <h4 className="font-[300] text-[12px] text-white/60 w-[80%] font-helvetica -mt-1 leading-[15px]">
                   {item.subtext}
                 </h4>
@@ -65,8 +71,8 @@ const Page = () => {
             setAccountType={setAccountType}
             signup
             array={formItems[accountType]}
-            cta='Sign Up'
-            bottomText='Already have an account?'
+            cta="Sign Up"
+            bottomText="Already have an account?"
             link="Login"
           />
         </div>

@@ -16,14 +16,14 @@ const successStory = [
       "/icons/star.svg",
       "/icons/star.svg",
     ],
-     social1: "/icons/fwhite.svg",
+    social1: "/icons/fwhite.svg",
     social2: "/icons/twhite.svg",
-    },
-  
+  },
+
   {
     id: 2,
     social1: "/icons/fwhite.svg",
-    social2: "/icons/twhite.svg",  
+    social2: "/icons/twhite.svg",
     name: "Laura Nnaji",
     role: "Fashion Designer",
     image: "/ellipse-9-3.png",
@@ -51,15 +51,16 @@ const successStory = [
       "/icons/star.svg",
       "/icons/star.svg",
     ],
- social1: "/icons/fwhite.svg",
-    social2: "/icons/twhite.svg",  },
+    social1: "/icons/fwhite.svg",
+    social2: "/icons/twhite.svg",
+  },
 ];
 
 export default function Individual() {
   return (
-    <section className="py-[58px]   gap-[10px] bg-[rgba(0,0,0,1)]">
-      <h2 className="text-center font-[500] text-[40px] leading-[100%] text-[#FFFFFF]">
-        <span className="text-[#2FC22B]">Individual</span> Success Stories
+    <section className="py-[58px]    ">
+      <h2 className="text-center font-[500] mb-10 -mt-5 text-[40px] leading-[100%] text-[#FFFFFF]">
+        <span className="text-[#2FC22B] ">Individual</span> Success Stories
       </h2>
       <div className="gap-[30px] p-[2px] grid md:grid-cols-3 mt-[30px] ">
         {successStory.map((story) => (

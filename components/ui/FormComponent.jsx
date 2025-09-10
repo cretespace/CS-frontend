@@ -25,6 +25,7 @@ const FormComponent = ({array,link, signup,accountType,setAccountType, cta,botto
         </div>}
 
         {/* form inputs */}
+
         { array?.slice(0,3).map((item, index) => (
             <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
         ))}
@@ -50,8 +51,6 @@ const FormComponent = ({array,link, signup,accountType,setAccountType, cta,botto
           
         }
 
-        
-
         {accountType === 'Student' && 
         <>
         <div className='flex gap-5'>
@@ -73,17 +72,13 @@ const FormComponent = ({array,link, signup,accountType,setAccountType, cta,botto
         </>
         }
        
-        
         {accountType === 'Business Center' && 
         <>
-    
-
         { array?.slice(6,8).map((item, index) => (
               <FormInput key={index} label={item.label} placeholder={item.placeholder} type={item.type}/>
             ))
         }
         </>
-          
         }
 
 
