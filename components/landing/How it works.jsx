@@ -11,14 +11,14 @@ const data = [
   },
   {
     id: 2,
-    title: "Order from anywhere",
+    title: "Pick Up When Ready",
     icon: "/landing/icons/clock.svg",
     content:
       "Get a message when your order is done. Stop by at any of our CRETESPACE stores, and collect it at a time that’s convenient for you.",
   },
   {
     id: 3,
-    title: "Order from anywhere",
+    title: "Get it delivered",
     icon: "/landing/icons/truck.svg",
     content:
       "Prefer not to go out? Select our delivery option and we’ll bring your order straight to your home, school, or office. It’s fast, safe, and saves you time.",

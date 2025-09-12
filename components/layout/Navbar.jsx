@@ -17,7 +17,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex gap-[12px] items-center">
-            <a href="#">Login</a>
+            <a href="/login">Login</a>
             <button className="pt-[4px] w-[70px] h-[32px] text-[16px] py-[4px] px=[6px] gap-[10px] rounded-[6px] bg-[#00A0D4] text-base font-medium ">
               <Link href="/account-types">Sign up</Link>
             </button>

@@ -25,7 +25,7 @@ export default function Page() {
       <Oneplatform />
       <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
       <Whycretespace />
-      <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
+      <hr className=" border-[#2FC22B4D]  lg:-mx-[165px]" />
       <Business />
       <hr className=" border-[#2FC22B4D] lg:-mx-[165px]" />
       <Individual />

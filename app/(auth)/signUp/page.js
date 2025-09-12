@@ -1,5 +1,5 @@
 "use client";
-import FormComponent from "@/components/ui/FormComponent";
+import SIgnupForm from "@/components/forms/SIgnupForm";
 import Icon from "@/components/ui/Icon";
 import {
   bCenterSignupInfo,
@@ -66,10 +66,11 @@ const Page = () => {
 
         {/* Form Section */}
         <div className="flex-[0.9] overflow-scroll scroll-hide mb-10">
-          <FormComponent
+          <SIgnupForm
             accountType={accountType}
             setAccountType={setAccountType}
             signup
+            isSignup
             array={formItems[accountType]}
             cta="Sign Up"
             bottomText="Already have an account?"
