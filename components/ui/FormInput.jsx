@@ -25,7 +25,7 @@ const FormInput = ({ label, phone, placeholder, type, two, signup }) => {
           } h-[45px] flex items-center justify-between rounded-[8px] border-[1.22px] py-[23px] px-[12px]`}
         >
           <input
-            className="outline-none  bg-transparent w-full"
+            className="outline-none h-[45px] bg-transparent w-full"
             type={type}
             placeholder={type === "password" ? "**********" : placeholder}
           />

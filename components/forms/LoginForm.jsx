@@ -47,7 +47,7 @@ const LoginForm = ({ object, setType, type }) => {
       />
 
       <div className="flex justify-center gap-1 -mt-4">
-        <p className="">{object.btmText}</p>
+        <p className="font-inter font-[400] text-white/70">{object.btmText}</p>
         <a
           href={object?.btmRoute || ""}
           className="text-[#2FC22B] font-inter font-[500] cursor-pointer"
