@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-const Icon = ({ w, h, src }) => {
+const Icon = ({ w, h, src }: any) => {
   return (
     <div>
       <Image
         width={w || 26}
         height={h || 26}
         src={src || "/signUp/checkbox.svg"}
-        alt='img'
+        alt="img"
       />
     </div>
   );

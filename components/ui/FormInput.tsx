@@ -1,8 +1,24 @@
 import React from "react";
-import Icon from "./Icon";
 import Image from "next/image";
+import Icon from "./Icon";
 
-const FormInput = ({ label, phone, placeholder, type, two, signup }) => {
+type FormInputProps = {
+  label?: string;
+  placeholder?: string;
+  type?: string;
+  phone?: string;
+  two?: string;
+  signup?: string;
+};
+
+const FormInput = ({
+  label,
+  phone,
+  placeholder,
+  type,
+  two,
+  signup,
+}: FormInputProps) => {
   return (
     <div className="flex flex-col gap-[12px]">
       <label className="font-inter font-[500]">{label}</label>

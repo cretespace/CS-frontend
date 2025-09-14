@@ -16,6 +16,7 @@ export const formData = {
     btmText: "Remembered it?",
     btmLabel: "Login",
     btmRoute: "/login",
+    route: "/resetPassword",
     btnText: "Submit",
     subtitle: "Let’s help you reset your password.",
   },
@@ -30,5 +31,7 @@ export const formData = {
       },
     ],
     submitFn: "()=>setType('newPass')",
+    btmRoute: "/signUp",
+    btnText: "Reset Password",
   },
 };

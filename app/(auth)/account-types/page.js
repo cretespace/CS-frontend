@@ -11,12 +11,12 @@ const page = () => {
   const accountTypes = [
     {
       type: "Individual",
-      image: "/images/man.png",
+      image: "/images/man.svg",
       use: "For Personal Use",
     },
     {
       type: "Business",
-      image: "/images/people.png",
+      image: "/images/people2.svg",
       use: " For SMEs and growing companies",
     },
     {
@@ -26,7 +26,7 @@ const page = () => {
     },
     {
       type: "Business Center",
-      image: "/images/woman2.png",
+      image: "/images/woman2.svg",
       use: "For Business Centres",
     },
   ];
