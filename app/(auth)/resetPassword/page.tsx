@@ -7,7 +7,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const Page = () => {
-  const type = "newPass";
+  const userType = "newPass";
   const [isSuccessfull, setisSuccessfull] = useState(false);
 
   return (
@@ -30,7 +30,7 @@ const Page = () => {
       <div className="flex justify-center items-center -mx-[162px] px-[162px] ">
         {isSuccessfull ? (
           <div className="my-[122px] ">
-            <LoginForm object={formData[type]} type={type} />
+            <LoginForm object={formData[userType]} userType={userType} />
           </div>
         ) : (
           <div className="my-[122px] flex flex-col items-center gap-[32px]">
