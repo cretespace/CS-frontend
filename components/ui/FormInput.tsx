@@ -7,7 +7,7 @@ type FormInputProps = {
   bankCard?: boolean;
   label?: string;
   placeholder?: string;
-  type?: "text" | "password" | "email" | "number";
+  type?: string;
   phone?: string;
   variant?: "default" | "signup" | "checkout"; // <-- clear variants
   withCountryCode?: boolean; // replaces "two"

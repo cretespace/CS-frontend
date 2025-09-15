@@ -5,7 +5,7 @@ import { formData } from "@/constants/login";
 import React, { useState } from "react";
 
 const Page = () => {
-  const [type, setType] = useState("login");
+  const [type, setType] = useState<string>("login");
 
   return (
     <div
