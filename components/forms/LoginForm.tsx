@@ -16,9 +16,15 @@ type FormInputProps = {
   };
   setUserType?: (value: string) => void;
   userType?: string;
+  setFn?: (value: boolean) => void;
 };
 
-const LoginForm = ({ object, setUserType, userType }: FormInputProps) => {
+const LoginForm = ({
+  object,
+  setUserType,
+  userType,
+  setFn,
+}: FormInputProps) => {
   const router = useRouter();
 
   const isRouting = userType === "trouble" ? true : false;
@@ -28,7 +34,7 @@ const LoginForm = ({ object, setUserType, userType }: FormInputProps) => {
     if (isRouting) {
       router.push("/resetPassword");
     } else {
-      // submitFn();
+      setFn(true);
     }
   };
 

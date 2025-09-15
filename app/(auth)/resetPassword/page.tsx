@@ -20,7 +20,7 @@ const Page = () => {
       className="min-h-[90vh] -mx-[162px] px-[162px] "
     >
       <Link href={"/login"}>
-        <div className="items-center pt-[120px] flex gap-2">
+        <div className="items-center pt-[95px] flex gap-2">
           <Icon src="/icons/backarrow.svg" />
           <p className="font-helvetica font-[400] text-[13px] text-[#2FC22B]">
             Back to Login
@@ -28,9 +28,13 @@ const Page = () => {
         </div>
       </Link>
       <div className="flex justify-center items-center -mx-[162px] px-[162px] ">
-        {isSuccessfull ? (
-          <div className="my-[122px] ">
-            <LoginForm object={formData[userType]} userType={userType} />
+        {!isSuccessfull ? (
+          <div className="">
+            <LoginForm
+              object={formData[userType]}
+              userType={userType}
+              setFn={setisSuccessfull}
+            />
           </div>
         ) : (
           <div className="my-[122px] flex flex-col items-center gap-[32px]">
