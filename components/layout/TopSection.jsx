@@ -20,7 +20,7 @@ const TopSection = () => {
 
   return (
     <div
-      className={`fixed  top-0 left-0 right-0 flex justify-between items-center h-[61px py-4 lg:px-[162px] px-[5px] border-b border-[#2FC22B80] transition-all duration-300 z-50 
+      className={`fixed  top-0 left-0 right-0 flex justify-between items-center h-[61px] py-4 lg:px-[162px] px-[5px] border-b border-[#2FC22B80] transition-all duration-300 z-50 
           ${scrolled ? "bg-black/60 backdrop-blur-md" : "bg-transparent"}`}
     >
       <Image src="/logo.svg" width={86} height={29} alt="logo" />

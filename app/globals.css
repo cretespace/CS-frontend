@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 :root {
   --background: #000000;
@@ -37,19 +37,19 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-.scroll-hide::-webkit-scrollbar{
+.scroll-hide::-webkit-scrollbar {
   display: none;
 }
+
 .font-ebrima {
   font-family: var(--font-ebrima);
 }
-.lit-bg{
-
-  background:radial-gradient(
+.lit-bg {
+  background: radial-gradient(
     50.7% 20.49% at 50% 5.85%,
     rgba(1, 105, 18, 0.397) 20%,
-    rgba(0,40,0, 0.45) 35%,
+    rgba(0, 40, 0, 0.45) 35%,
     rgba(0, 20, 0, 0.6) 80%,
-    rgba(0,0,0,0.85)100%
-    )
-  }
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}

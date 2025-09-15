@@ -32,17 +32,20 @@ export const businessSignupInfo = [
   {
     icon: "/signUp/cloud.svg",
     text: "Extended  cloud file storage (15gb)",
-    subtext: "Store and manage all your company documents without worrying about storage limits.",
+    subtext:
+      "Store and manage all your company documents without worrying about storage limits.",
   },
   {
     icon: "/signUp/checkbox.svg",
     text: "Order Tracking & Management",
-    subtext: "Monitor all company service requests, deadlines, and deliveries in real-time.",
+    subtext:
+      "Monitor all company service requests, deadlines, and deliveries in real-time.",
   },
   {
     icon: "/signUp/file.svg",
     text: "Access to premium business templates ",
-    subtext: "Access ready-made templates for proposals, reports, letters, and other business documents.",
+    subtext:
+      "Access ready-made templates for proposals, reports, letters, and other business documents.",
   },
 ];
 
@@ -66,7 +69,8 @@ export const studentSignupInfo = [
   {
     icon: "/signUp/file.svg",
     text: "File Conversion & Formatting Tools",
-    subtext: "Easily convert documents and auto-format references (APA, MLA, etc.) for academic use.",
+    subtext:
+      "Easily convert documents and auto-format references (APA, MLA, etc.) for academic use.",
   },
 ];
 
@@ -80,17 +84,20 @@ export const bCenterSignupInfo = [
   {
     icon: "/signUp/bag.svg",
     text: "Free Business Tools & Discounted Services",
-    subtext: "Use premium tools at no extra cost and enjoy discounts on CRETESPACE services to boost profitability.",
+    subtext:
+      "Use premium tools at no extra cost and enjoy discounts on CRETESPACE services to boost profitability.",
   },
   {
     icon: "/signUp/devices.svg",
     text: "Admin Tools for Managing Orders",
-    subtext: "Get a full dashboard to organize, track, and complete client requests with ease.",
+    subtext:
+      "Get a full dashboard to organize, track, and complete client requests with ease.",
   },
   {
     icon: "/signUp/file.svg",
     text: "Free Expert-Designed Marketing Templates",
-    subtext: "Access ready-made flyers, posters, and digital assets to promote your business centre.",
+    subtext:
+      "Access ready-made flyers, posters, and digital assets to promote your business centre.",
   },
 ];
 
@@ -104,55 +111,139 @@ export const formItems = {
     { label: "Phone Number", placeholder: "Phone Number", type: "tel" },
     { label: "Email", placeholder: "Email", type: "email" },
     { label: "Password", placeholder: "Password", type: "password" },
-    { label: "Confirm Password", placeholder: "Confirm Password", type: "password" },
+    {
+      label: "Confirm Password",
+      placeholder: "Confirm Password",
+      type: "password",
+    },
   ],
 
   Business: [
     { label: "Business Name", placeholder: "Business Name", type: "text" },
-    { label: "Business Address", placeholder: "Business Address", type: "text" },
-    { label: "Contact Person Name", placeholder: "Contact Person Name", type: "text" },
+    {
+      label: "Business Address",
+      placeholder: "Business Address",
+      type: "text",
+    },
+    {
+      label: "Contact Person Name",
+      placeholder: "Contact Person Name",
+      type: "text",
+    },
     { label: "Contact Person role", placeholder: "Manager", type: "text" },
     { label: "Country", placeholder: "Country", type: "text" },
-    { label: "Business Phone Number", placeholder: "Phone Number", type: "phone" },
+    {
+      label: "Business Phone Number",
+      placeholder: "Phone Number",
+      type: "phone",
+    },
     { label: "Email", placeholder: "Email", type: "email" },
     { label: "Password", placeholder: "Password", type: "password" },
-    { label: "Confirm Password", placeholder: "Confirm Password", type: "password" },
+    {
+      label: "Confirm Password",
+      placeholder: "Confirm Password",
+      type: "password",
+    },
   ],
 
   Student: [
     { label: "First Name", placeholder: "First Name", type: "text" },
     { label: "Last Name", placeholder: "Last Name", type: "text" },
-    { label: "Name of School / Institution", placeholder: "Name of School / Institution", type: "text" },
-    { label: "Registration No.", placeholder: "Registration No.", type: "text" },
+    {
+      label: "Name of School / Institution",
+      placeholder: "Name of School / Institution",
+      type: "text",
+    },
+    {
+      label: "Registration No.",
+      placeholder: "Registration No.",
+      type: "text",
+    },
     { label: "Country", placeholder: "Country", type: "text" },
     { label: "Gender", placeholder: "Gender", type: "text" },
     { label: "Date of Birth", placeholder: "", type: "date" },
     { label: " Phone Number", placeholder: " Phone Number", type: "phone" },
-  
-    { label: " Upload School ID", upload:true },
-  
-    { label: "Email", placeholder: "Email", type: "email" },
-     { label: "Password", placeholder: "Password", type: "password" },
-    { label: "Confirm Password", placeholder: "Confirm Password", type: "password" },
 
+    { label: " Upload School ID", upload: true },
+
+    { label: "Email", placeholder: "Email", type: "email" },
+    { label: "Password", placeholder: "Password", type: "password" },
+    {
+      label: "Confirm Password",
+      placeholder: "Confirm Password",
+      type: "password",
+    },
   ],
 
   "Business Center": [
     { label: "Business Name", placeholder: "Business Name", type: "text" },
-    { label: "Business Address", placeholder: "Business Address", type: "text" },
-    { label: "Contact Person Name", placeholder: "Contact Person Name", type: "text" },
+    {
+      label: "Business Address",
+      placeholder: "Business Address",
+      type: "text",
+    },
+    {
+      label: "Contact Person Name",
+      placeholder: "Contact Person Name",
+      type: "text",
+    },
     { label: "Contact Person role", placeholder: "Manager", type: "password" },
     { label: "Country", placeholder: "Country", type: "select" },
-    { label: "Business Phone Number", placeholder: "Business Phone Number", type: "phone" },
-    { label: "Number of Employees", placeholder: "Number of Employees", type: "text" },
-    { label: "Why do you want to partner with CRETESPACE?", placeholder: "Answer", type: "text" },
+    {
+      label: "Business Phone Number",
+      placeholder: "Business Phone Number",
+      type: "phone",
+    },
+    {
+      label: "Number of Employees",
+      placeholder: "Number of Employees",
+      type: "text",
+    },
+    {
+      label: "Why do you want to partner with CRETESPACE?",
+      placeholder: "Answer",
+      type: "text",
+    },
 
     { label: "Upload Office Photo" },
-   
+
     { label: "Email", placeholder: "Password", type: "email" },
     { label: "Password", placeholder: "Password", type: "password" },
-    { label: "Confirm Password", placeholder: "Confirm Password", type: "password" },
+    {
+      label: "Confirm Password",
+      placeholder: "Confirm Password",
+      type: "password",
+    },
   ],
 };
 
+export const toggleContent = {
+  Business: {
+    price: "₦30,000",
+    subtext: "15GB Cloud Storage, Priority Support, Order Tracking.",
+    subtotal: "₦30,000",
+    bonus: "1,000",
+    amount: "1,000",
+    saveAmount: "₦60,000",
+    yearAmount: "₦360,000",
+  },
+  Student: {
+    price: "₦30,000",
+    subtext: "15GB Cloud Storage, Priority Support, Order Tracking.",
+    subtotal: "₦30,000",
+    bonus: "1,000",
+    amount: "1,000",
+    saveAmount: "₦60,000",
+    yearAmount: "₦360,000",
+  },
 
+  "Business Center": {
+    price: "₦30,000",
+    subtext: "15GB Cloud Storage, Priority Support, Order Tracking.",
+    subtotal: "₦30,000",
+    bonus: "1,000",
+    amount: "1,000",
+    saveAmount: "₦60,000",
+    yearAmount: "₦360,000",
+  },
+};

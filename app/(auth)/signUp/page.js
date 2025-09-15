@@ -39,7 +39,7 @@ const Page = () => {
     >
       <div className="lg:flex gap-[5rem] pt-[85px] ">
         {/* Left Section */}
-        <div className="flex-[0.5]  max-h-[85vh] overflow-scroll scroll-hide flex-shrink-0 flex-col gap-[54px] sticky top-[80px] h-fit hidden md:flex">
+        <div className="flex-[0.5]  max-h-[85vh] overflow-scroll scroll-hide flex-shrink-0 flex-col gap-[54px] fixed top-[80px] h-fit hidden md:flex">
           <div>
             <h1 className="font-[500] text-[36px] font-helvetica">
               Create your Account
@@ -65,7 +65,7 @@ const Page = () => {
         </div>
 
         {/* Form Section */}
-        <div className="flex-[0.9] overflow-scroll scroll-hide mb-10">
+        <div className="2xl:w-[671px] ml-auto overflow-scroll scroll-hide mb-10">
           <SIgnupForm
             accountType={accountType}
             setAccountType={setAccountType}

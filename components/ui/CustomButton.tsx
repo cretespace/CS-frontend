@@ -5,7 +5,7 @@ interface CustomButtonProps {
   text: string;
   submitFn?: () => void;
   route?: string;
-  isRouting: boolean;
+  isRouting?: boolean;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
