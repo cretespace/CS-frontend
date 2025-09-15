@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <section className="lg:-mx-[165px] lg:-mx-[40px] -mx-5 h-[66px] border-b-[#2FC22B80] lg:px-[40px]  py-[17px] text-[#B8B8B8] border-b-[1px] justify-between">
+    <section className="lg:-mx-[162px] lg:-mx-[40px] -mx-5 h-[66px] border-b-[#2FC22B80] lg:px-[40px]  py-[17px] text-[#B8B8B8] border-b-[1px] justify-between">
       <nav className=" lg:px-[40px] px-5 flex justify-between items-center">
         <Image src="/logo.svg" alt="crete logo" width={86} height={29} />
         <div className="lg:flex gap-[32px] items-center text-[16px] hidden">
