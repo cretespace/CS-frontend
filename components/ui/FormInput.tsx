@@ -16,7 +16,7 @@ type FormInputProps = {
 const FormInput: React.FC<FormInputProps> = ({
   label,
   placeholder,
-  type = "text",
+  type,
   phone,
   variant = "default",
   withCountryCode = false,
@@ -65,7 +65,9 @@ const FormInput: React.FC<FormInputProps> = ({
         {/* Input field */}
         <div className={inputWrapperClasses}>
           <input
-            className="outline-none w-full"
+            className={`outline-none w-full ${
+              variant === "checkout" ? "placeholder:text-[12px]" : ""
+            }`}
             type={type}
             placeholder={type === "password" ? "**********" : placeholder}
           />
@@ -84,7 +86,7 @@ const FormInput: React.FC<FormInputProps> = ({
       </div>
 
       {/* Extra password info only in signup */}
-      {type === "password" && variant === "signup" && (
+      {type === "password" && (
         <p className="text-white/70 -mt-2 text-[12px] font-[300]">
           Minimum length is 8 characters
         </p>

@@ -14,14 +14,14 @@ type FormInputProps = {
     btmLabel?: string;
     btmRoute?: string;
   };
-  setType?: (value: string) => void;
-  type?: string;
+  setUserType?: (value: string) => void;
+  userType?: string;
 };
 
-const LoginForm = ({ object, setType, type }: FormInputProps) => {
+const LoginForm = ({ object, setUserType, userType }: FormInputProps) => {
   const router = useRouter();
 
-  const isRouting = type === "trouble" ? true : false;
+  const isRouting = userType === "trouble" ? true : false;
   const handleOnClick = (e) => {
     e.preventDefault();
 
@@ -52,7 +52,7 @@ const LoginForm = ({ object, setType, type }: FormInputProps) => {
         />
       ))}
 
-      {(type === "login" || type === "newPass") && (
+      {(userType === "login" || userType === "newPass") && (
         <div className="flex justify-between">
           <div className="flex gap-1 items-center">
             <Icon src={"/signUp/check.svg"} w={20} h={20} />
@@ -61,9 +61,9 @@ const LoginForm = ({ object, setType, type }: FormInputProps) => {
 
           <p
             className="cursor-pointer text-[#2FC22B] font-inter font-[600]"
-            onClick={() => setType("trouble")}
+            onClick={() => setUserType("trouble")}
           >
-            {type === "login" && " Forgot Password?"}
+            {userType === "login" && " Forgot Password?"}
           </p>
         </div>
       )}

@@ -10,12 +10,17 @@ import {
 } from "@/constants";
 import Cookies from "js-cookie";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Page = () => {
-  const [accountType, setAccountType] = useState(
-    Cookies.get("accountType") || "Individual"
-  );
+  const [accountType, setAccountType] = useState("Individual");
+
+  useEffect(() => {
+    const cookieType = Cookies.get("accountType");
+    if (cookieType) {
+      setAccountType(cookieType);
+    }
+  }, []);
 
   let signupInfo;
   if (accountType === "Individual") {
@@ -65,7 +70,7 @@ const Page = () => {
         </div>
 
         {/* Form Section */}
-        <div className="2xl:w-[671px] ml-auto overflow-scroll scroll-hide mb-10">
+        <div className="2xl:w-[671px] lg:w-[571px]  ml-auto overflow-scroll scroll-hide mb-10">
           <SIgnupForm
             accountType={accountType}
             setAccountType={setAccountType}

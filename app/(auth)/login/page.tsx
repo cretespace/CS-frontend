@@ -5,7 +5,7 @@ import { formData } from "@/constants/login";
 import React, { useState } from "react";
 
 const Page = () => {
-  const [type, setType] = useState<string>("login");
+  const [userType, setUserType] = useState<string>("login");
 
   return (
     <div
@@ -18,7 +18,11 @@ const Page = () => {
     >
       {/* Form div */}
       <div className="my-[122px] ">
-        <LoginForm setType={setType} object={formData[type]} type={type} />
+        <LoginForm
+          setUserType={setUserType}
+          object={formData[userType]}
+          userType={userType}
+        />
       </div>
     </div>
   );

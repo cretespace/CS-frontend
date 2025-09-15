@@ -138,16 +138,15 @@ const SIgnupForm = ({
                 signup
               />
             ))
-        : array
-            ?.slice(9, 12)
-            .map((item, index) => (
-              <FormInput
-                key={index}
-                label={item.label}
-                placeholder={item.placeholder}
-                type={item.type}
-              />
-            ))}
+        : array?.slice(9, 12).map((item, index) => (
+            <FormInput
+              key={index}
+              label={item.label}
+              placeholder={item.placeholder}
+              type={item.type}
+              // variant="signup"
+            />
+          ))}
 
       <CustomButton text={cta} />
 
