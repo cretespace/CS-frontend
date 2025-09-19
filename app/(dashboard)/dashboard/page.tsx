@@ -24,7 +24,7 @@ const page = () => {
           {/* top */}
           <div className="lg:flex gap-[14px]">
             {/* top - left - hero banner */}
-            <div className="bg-[#2FC22B] relative pt-[24px] px-[15px] flex justify-between w-full  min-h-[165px] rounded-[10px]">
+            <div className="bg-[#2FC22B] relative pt-[24px] px-[15px] flex  flex-wrap justify-between w-full  min-h-[165px] rounded-[10px]">
               <div className="space-y-[24px]">
                 <p className="text-[24px] ">
                   Welcome Back, <span className="font-[700] ">Favour</span>
@@ -89,7 +89,7 @@ const page = () => {
           </div>
 
           {/* center - quick actions*/}
-          <div className="my-[2.1rem] space-y-[14px]">
+          <div className="my-[1.57rem] space-y-[14px]">
             <p className="text-[#A2FF9F] font-[500]">Quick Actions</p>
             <div className="lg:flex gap-[10.05px] ">
               {quickActions.map((item, index) => (
@@ -173,7 +173,7 @@ const page = () => {
                 </p>
                 {/* progress */}
                 <div
-                  className={`flex-[0.2] gap-[6px] ${textColor} rounded-[8.08px] border-[0.4px] border-white/20 w-[127px] flex items-center text-[11.31px] justify-center h-[23px] bg-[#202020]`}
+                  className={`flex-[0.2] gap-[6px] ${textColor} rounded-[8.08px] border-[0.4px] border-white/20 w-[127px] flex items-center text-[11.31px] justify-center min-h-[23px] bg-[#202020]`}
                 >
                   <p
                     className={`w-[8.08px] h-[8.08px] ${bgColor} rounded-full`}
