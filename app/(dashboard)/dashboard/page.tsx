@@ -16,7 +16,7 @@ const featuredDesigns = [
 
 const page = () => {
   return (
-    <div>
+    <div className="mb-10">
       {/* top of page*/}
       <div className="lg:flex gap-7 ">
         {/* left */}
@@ -33,7 +33,7 @@ const page = () => {
                   <p className="font-[200] text-white/70 text-[12px]">
                     Motivational Quote
                   </p>
-                  <p className="font-[500] ">
+                  <p className="font-[500] text-white/90">
                     “Don’t watch the clock; do what it does. Keep going.”
                   </p>
                   <p className="absolute right-0 font-[200] text-white/70 text-[12px]">
@@ -59,10 +59,10 @@ const page = () => {
             <Card className="lg:w-[39%] min-h-[165px] py-6 mt-5 lg:mt-0">
               {/* header */}
               <div className="flex -mt-4 px-2 mb-2 justify-between items-center">
-                <p className="text-[#A2FF9F]">Featured Designs</p>
+                <p className="text-[#A2FF9F] font-[400]">Featured Designs</p>
                 <div className="flex gap-3">
-                  <Icon w={6.14} h={3.78} />
-                  <Icon w={6.14} h={3.78} />
+                  <Icon src="/dash/left2.svg" w={5} h={2.78} />
+                  <Icon src="/dash/right.svg" w={6.14} h={3.78} />
                 </div>
               </div>
               {/* body */}
@@ -73,12 +73,12 @@ const page = () => {
                     key={index}
                     src={item}
                     w={57.44}
-                    h={86.15}
+                    h={96.15}
                   />
                 ))}
               </div>
               {/* bottom */}
-              <p className="font-inter px-2 text-[10px] text-white/70 mt-2">
+              <p className="font-inter px-2 text-[10px] text-white/70 -mb-4 mt-2">
                 Need something similar?
                 <span className="font-[500] text-[#2FC22B] pt-10">
                   {" "}
