@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <>
       <TopSection />
-      <div className="-mx-[162px] px-[162px]">{children}</div>
+      <div className="px-[162px]">{children}</div>
     </>
   );
 }

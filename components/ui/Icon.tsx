@@ -1,16 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-const Icon = ({ w, h, src }: any) => {
+const Icon = ({ w, h, src, style }: any) => {
   return (
-    <div>
-      <Image
-        width={w || 26}
-        height={h || 26}
-        src={src || "/signUp/checkbox.svg"}
-        alt="img"
-      />
-    </div>
+    <Image
+      width={w || 26}
+      height={h || 26}
+      src={src || "/signUp/checkbox.svg"}
+      alt="img"
+      className={`${style}`}
+    />
   );
 };
 

@@ -17,7 +17,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function Page() {
   return (
-    <main className="">
+    <main className="lg:px-[162px] px-5">
       <Navbar />
 
       <Hero />
