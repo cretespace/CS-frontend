@@ -73,7 +73,7 @@ const Sidebar = () => {
         ))}
       </div>
 
-      <div className="relative mt-[60px] h-[151px] w-[162px] flex flex-col gap-[6px] justify-center items-center   bg-[#1B1A1A] rounded-[8px] border-[0.5px]  border-white/10">
+      <div className="relative mt-[70px] mb-7 h-[151px] w-[162px] flex flex-col gap-[6px] justify-center items-center   bg-[#1B1A1A] rounded-[8px] border-[0.5px]  border-white/10">
         <p className="text-center text-[10px] font-inter mt-8 w-[80%] text-white/70">
           Upgrade now and enjoy exclusive benefits
         </p>
