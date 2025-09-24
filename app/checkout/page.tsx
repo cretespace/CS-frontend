@@ -10,7 +10,7 @@ const page = () => {
   const [type, setType] = useState("Business");
   const obj = toggleContent[type];
   return (
-    <div>
+    <div className="px-[162px]">
       <TopSection />
       <div className="pt-[132px]">
         {/* back routing arrow */}

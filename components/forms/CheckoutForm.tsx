@@ -88,7 +88,7 @@ const CheckoutForm = ({}: FormInputProps) => {
           </p>
         </div>
 
-        <CustomButton text="Subscribe" />
+        <CustomButton text="Subscribe" route="/dashboard" isRouting />
       </form>
     </section>
   );
