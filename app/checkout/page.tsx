@@ -5,9 +5,11 @@ import Icon from "@/components/ui/Icon";
 import { toggleContent } from "@/constants";
 import Link from "next/link";
 import React, { useState } from "react";
+import Cookies from "js-cookie";
 
 const page = () => {
-  const [type, setType] = useState("Business");
+  const type = Cookies.get("account-type");
+  const [typesting, setTypesting] = useState<String>("business");
   const obj = toggleContent[type];
   return (
     <div className="px-[162px]">
@@ -16,9 +18,12 @@ const page = () => {
         {/* back routing arrow */}
         <div className="items-center flex gap-2 fixed top-[81px] -ml-2">
           <Icon src="/icons/backarrow.svg" />
-          <p className="font-helvetica font-[400] text-[13px] text-[#2FC22B]">
+          <Link
+            href={"/signUp"}
+            className="font-helvetica font-[400] text-[13px] text-[#2FC22B]"
+          >
             Previous
-          </p>
+          </Link>
         </div>
 
         {/* body */}
@@ -27,12 +32,14 @@ const page = () => {
           <div className=" mb-5 fixed h-[75vh] overflow-scroll  scroll-hide flex-col ">
             {/* sub text */}
             <p className="font-helvetica text-[#2FC22B] ">
-              Subscription for <span className="font-[700]">{type}</span>{" "}
-              Account
+              Subscription for{" "}
+              <span className="font-[700] capitalize">{type}</span> Account
             </p>
             {/* price */}
             <div className="flex items-end gap-[9px] my-2">
-              <p className="text-[64px] font-[500] leading-none">{obj.price}</p>
+              <p className="text-[64px] font-[500] leading-none">
+                {obj?.price}
+              </p>
               {/* Per month stacked */}
               <div className="flex flex-col leading-none text-white/70 ">
                 <span>Per</span>
@@ -40,7 +47,7 @@ const page = () => {
               </div>
             </div>
 
-            <p className="text-white/60">{obj.subtext}</p>
+            <p className="text-white/60">{obj?.subtext}</p>
 
             {/* card */}
             <div className="w-[496px] my-[3rem] rounded-[14.47px]  border-[1.96px] border-[#2FC22B33] gap-[9.65px] ">
@@ -57,7 +64,7 @@ const page = () => {
 
                 {/* top right */}
                 <p className="font-[500] text-[15.44px] text-[#A2FF9F]">
-                  {obj.price}
+                  {obj?.price}
                 </p>
               </div>
 
@@ -67,7 +74,7 @@ const page = () => {
                 <div className="flex items-center gap-[11.58px]">
                   <Icon src="/icons/toogle.svg" w={35.38} h={17.68} />
                   <p className="font-inter rounded-[3.86px] leading-[23.16px] text-[11.58px] bg-[#A2FF9F] h-[24px] text-black px-2">
-                    Save {obj.saveAmount}
+                    Save {obj?.saveAmount}
                   </p>
                   <p className="text-[11.58px] text-white/60">
                     With annual billing
@@ -76,7 +83,7 @@ const page = () => {
 
                 {/* bottom right */}
                 <p className="text-white/60 text-[11.58px]">
-                  {obj.yearAmount}/year
+                  {obj?.yearAmount}/year
                 </p>
               </div>
             </div>
@@ -85,7 +92,7 @@ const page = () => {
             <div>
               <div className="flex justify-between items-center pb-5 border-b-[1px] border-white/30">
                 <p>Subtotal</p>
-                <p>{obj.subtotal}</p>
+                <p>{obj?.subtotal}</p>
               </div>
 
               {/* middle */}
@@ -104,7 +111,7 @@ const page = () => {
 
               <div className="mt-[2rem] flex justify-between items-center pb-5 border-b-[1px] border-white/30">
                 <p>Total Amount Due</p>
-                <p>{obj.subtotal}</p>
+                <p>{obj?.subtotal}</p>
               </div>
             </div>
           </div>

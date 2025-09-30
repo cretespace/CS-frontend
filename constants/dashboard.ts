@@ -1,8 +1,9 @@
-export const dashboardNav = [
+// ------------------ individual -------------------------- //
+export const individualNav = [
   {
     name: "Dashboard",
     icon: "/dash/board.svg",
-    route: "/dashboard",
+    route: "/dashboard/business",
   },
   {
     name: "Cloud Library",
@@ -30,6 +31,94 @@ export const dashboardNav = [
     icon: "/dash/wallet.svg",
     route: "",
   },
+  {
+    name: "Self-Service Tools",
+    icon: "/dash/service.svg",
+    route: "",
+  },
+  {
+    name: "Settings",
+    icon: "/dash/settings.svg",
+    route: "",
+  },
+  {
+    name: "Log out",
+    icon: "/dash/logout.svg",
+    route: "",
+  },
+];
+
+export const businessNav = [
+  {
+    name: "Dashboard",
+    icon: "/dash/board.svg",
+    route: "/dashboard/business",
+  },
+  {
+    name: "Business Tools",
+    icon: "/dash/service.svg",
+    route: "/settings",
+  },
+  {
+    name: "Support",
+    icon: "/dash/phone.svg",
+    route: "",
+  },
+  {
+    name: "Cloud Library",
+    icon: "/dash/cloud.svg",
+    route: "/orders",
+  },
+  {
+    name: "Request a Service",
+    icon: "/dash/request.svg",
+    route: "",
+  },
+  {
+    name: "Team Members",
+    icon: "/dash/recent/users.svg",
+    route: "",
+  },
+  {
+    name: "Billing & Subscription",
+    icon: "/dash/wallet.svg",
+    route: "",
+  },
+
+  {
+    name: "Company Settings",
+    icon: "/dash/settings.svg",
+    route: "",
+  },
+  {
+    name: "Log out",
+    icon: "/dash/logout.svg",
+    route: "",
+  },
+];
+
+export const studentNav = [
+  {
+    name: "Dashboard",
+    icon: "/dash/board.svg",
+    route: "/dashboard/business",
+  },
+  {
+    name: "Cloud Library",
+    icon: "/dash/cloud.svg",
+    route: "/settings",
+  },
+  {
+    name: "Talk to Agent",
+    icon: "/dash/phone.svg",
+    route: "",
+  },
+  {
+    name: "Order services",
+    icon: "/dash/orders.svg",
+    route: "/orders",
+  },
+
   {
     name: "Self-Service Tools",
     icon: "/dash/service.svg",
@@ -174,5 +263,202 @@ export const cloud = [
     name: "Documents",
     bgColor: "bg-[#2FC22B]",
     percent: "36%",
+  },
+];
+
+// -------------------- BUSINESS ---------------------------- //
+export const stats = [
+  {
+    title: "Active Requests",
+    value: "6 Total",
+    subtitle: "4 Pending, 2 In Progress",
+    icon: "/dash/student/chat-bubble.svg",
+  },
+  {
+    title: "Monthly Quota",
+    value: "12/20",
+    icon: "/dash/business/pie-chart.svg",
+    subtitle: "Orders Used",
+  },
+  {
+    title: "Cloud Storage",
+    value: "4.5GB / 20GB",
+    icon: "/dash/student/cloud-file.svg",
+    subtitle: "Storage Consumed",
+  },
+  {
+    title: "Assigned Agent",
+    value: "Chizzy",
+    icon: "/dash/business/headset.svg",
+    subtitle: "Admin Support",
+  },
+  {
+    title: "Billing Status",
+    value: "Active",
+    icon: "/dash/business/cash-flow.svg",
+    subtitle: "Subscription Renews July 3rd",
+  },
+];
+
+export const aiSuggestions = [
+  {
+    icon: "/dash/business/paper.svg",
+    text: "Convert these 3 files into a branded report?",
+    bgColor: "bg-[#2FC22B]",
+    textColor: "text-white",
+    btnColor: "bg-[#A2FF9F]",
+    btnText: "Convert Now",
+    btnTextColor: "text-[#24BA20]",
+  },
+  {
+    icon: "/dash/business/bar-chart.svg",
+    text: "Want us to format your March report?",
+    bgColor: "bg-[#A2FF9F]",
+    btnColor: "bg-[#008C0E]",
+    btnText: "Apply Suggestion",
+    textColor: "text-[#1EB51A]",
+  },
+  {
+    icon: "/dash/business/export.svg",
+    text: "Move these 7 files into a folder for easy access?",
+    bgColor: "bg-[#00A0D4]",
+    btnColor: "bg-[#9FEAFF]",
+    btnText: "Move Files",
+    textColor: "text-white",
+    btnTextColor: "text-[#00A0D4]",
+  },
+];
+
+export const currentTask = [
+  {
+    icon: "/dash/recent/print.svg",
+    title: "Create Invoice Template",
+    subtitle: "Task assigned to Finance team",
+    status: "In Progress",
+    progress: 65,
+    progressBar: "/dash/recent/pro1.svg",
+  },
+  {
+    icon: "/dash/recent/bro.svg",
+    title: "Design Proposal Cover",
+    subtitle: "Task assigned to Marketing team",
+    status: "Assigned",
+    progress: 23,
+    progressBar: "/dash/recent/pro2.svg",
+  },
+  {
+    icon: "/dash/business/update.svg",
+    title: "Update Onboarding Form",
+    subtitle: "New request added by HR",
+    status: "New Task",
+    progress: 0,
+    progressBar: "/dash/recent/pro3.svg",
+  },
+  {
+    icon: "/dash/business/bar-chart-blue.svg",
+    title: "Annual Report Formatting",
+    subtitle: "Delivered to Admin team",
+    status: "Delivered",
+    progress: 100,
+    progressBar: "/dash/recent/pro4.svg",
+  },
+  {
+    icon: "/dash/business/sm-flyer.svg",
+    title: "Social Media Flyer",
+    subtitle: "Reopened by Marketing team",
+    status: "In Progress",
+    progress: 45,
+    progressBar: "/dash/recent/pro5.svg",
+  },
+];
+
+export const businessTools = [
+  {
+    icon: "/dash/business/tools/1.svg",
+    text: "Company Cloud  Storage",
+  },
+  {
+    icon: "/dash/business/tools/2.svg",
+    text: "Templates Vault",
+  },
+  {
+    icon: "/dash/business/tools/3.svg",
+    text: "Virtual Reception",
+    arrow: "/dash/business/arrow-blue.svg",
+  },
+  {
+    icon: "/dash/business/tools/4.svg",
+    text: "Booking Tools",
+    arrow: "/dash/business/arrow-blue.svg",
+  },
+  {
+    icon: "/dash/business/tools/5.svg",
+    text: "CRETEMEET",
+    subtitle: "(coming Soon)",
+  },
+  {
+    icon: "/dash/business/tools/6.svg",
+    text: "Remote Print  Request",
+  },
+  {
+    icon: "/dash/business/tools/7.svg",
+    text: "Team Access",
+    arrow: "/dash/business/arrow-blue.svg",
+  },
+  {
+    icon: "/dash/business/tools/8.svg",
+    text: "CRETECAD Live  Support",
+    arrow: "/dash/business/arrow-blue.svg",
+  },
+];
+
+export const studentStats = [
+  {
+    title: "Active Tasks",
+    value: "10 Total",
+    subtitle: "3 In Progress, 1 Delivered",
+    icon: "/dash/student/chat-bubble.svg",
+  },
+  {
+    title: "School",
+    value: "Unilag",
+    icon: "/dash/student/school.svg",
+    subtitle: "University of Lagos",
+  },
+  {
+    title: "Cloud Library",
+    value: "1GB / 2GB",
+    icon: "/dash/student/cloud-file.svg",
+    subtitle: "12 Books, 4 Templates",
+  },
+  {
+    title: "Agent Chat",
+    value: "Dominic",
+    icon: "/dash/student/chat-bubble.svg",
+    subtitle: "CRETECAD Agent Assigned",
+  },
+  {
+    title: "Self-Services Used",
+    value: "4",
+    icon: "/dash/student/self-service.svg",
+    subtitle: "4 this week",
+  },
+];
+
+export const usage = [
+  {
+    icon: "/dash/business/task-complete.svg",
+    text: "Tasks Completed",
+    value: "1,200",
+  },
+  {
+    icon: "/dash/business/files-upload.svg",
+    text: "Files Uploaded",
+    value: "1,370",
+  },
+  {
+    icon: "/dash/business/agent.svg",
+    text: "Hours of Agent Collaboration",
+    value: "72 hours",
   },
 ];

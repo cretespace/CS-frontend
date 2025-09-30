@@ -41,6 +41,13 @@ body {
   display: none;
 }
 
+.card-sec {
+  opacity: 1;
+  border-radius: 12.14px;
+  border-width: 1px;
+  border: 1px solid #ffffff1a;
+}
+
 .font-ebrima {
   font-family: var(--font-ebrima);
 }

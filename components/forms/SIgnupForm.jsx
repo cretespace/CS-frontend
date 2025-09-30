@@ -4,6 +4,7 @@ import FormInput from "../ui/FormInput";
 import SelectInput from "../ui/SelectInput";
 import CustomButton from "../ui/CustomButton";
 import Icon from "../ui/Icon";
+import Cookies from "js-cookie";
 
 const SIgnupForm = ({
   array,
@@ -15,20 +16,22 @@ const SIgnupForm = ({
   bottomText,
 }) => {
   const accountTypeArray = [
-    "Individual",
-    "Business",
-    "Student",
-    "Business Center",
+    "individual",
+    "business",
+    "student",
+    "business-Center",
   ];
   return (
     <form className="p-10 rounded-[18.94px] flex flex-col gap-[28px]   [background:linear-gradient(to_right,_#00000030_0%,_#062d0831_10%,_#062D0866_70%,_#00000030_100%)] border-[0.95px] border-[#0C520A80]">
       {/* acount type navigation */}
       {signup && (
-        <div className="flex items-center justify-cemter gap-[16px] rounded-[5px] bg-black/15 w-[351px] h-[32px] px-[8px] py-[4px]">
+        <div className="flex items-center capitalize justify-cemter gap-[16px] rounded-[5px] bg-black/15 w-[351px] h-[32px] px-[8px] py-[4px]">
           {accountTypeArray.map((item, index) => (
             <p
               key={index}
-              onClick={() => setAccountType(item)}
+              onClick={() => (
+                setAccountType(item), Cookies.set("account-type", item)
+              )}
               className={
                 accountType === item
                   ? "rounded-[3px] py-[5px] h-[24px] text-center flex items-center  px-[9px] bg-[#013500] flex items-center cursor-pointer"
@@ -148,7 +151,14 @@ const SIgnupForm = ({
             />
           ))}
 
-      <CustomButton text={cta} />
+      <CustomButton
+        text={cta}
+        route={
+          accountType === "individual"
+            ? `/dashboard/${accountType}`
+            : `/checkout`
+        }
+      />
 
       {signup && (
         <div className="flex gap-[8px] -mt-3">

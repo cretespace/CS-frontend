@@ -102,7 +102,7 @@ export const bCenterSignupInfo = [
 ];
 
 export const formItems = {
-  Individual: [
+  individual: [
     { label: "First Name", placeholder: "First Name", type: "text" },
     { label: "Last Name", placeholder: "Last Name", type: "text" },
     { label: "Country", placeholder: "Country", type: "select-country" },
@@ -118,7 +118,7 @@ export const formItems = {
     },
   ],
 
-  Business: [
+  business: [
     { label: "Business Name", placeholder: "Business Name", type: "text" },
     {
       label: "Business Address",
@@ -146,7 +146,7 @@ export const formItems = {
     },
   ],
 
-  Student: [
+  student: [
     { label: "First Name", placeholder: "First Name", type: "text" },
     { label: "Last Name", placeholder: "Last Name", type: "text" },
     {
@@ -175,7 +175,7 @@ export const formItems = {
     },
   ],
 
-  "Business Center": [
+  "business-Center": [
     { label: "Business Name", placeholder: "Business Name", type: "text" },
     {
       label: "Business Address",
@@ -218,7 +218,7 @@ export const formItems = {
 };
 
 export const toggleContent = {
-  Business: {
+  business: {
     price: "₦30,000",
     subtext: "15GB Cloud Storage, Priority Support, Order Tracking.",
     subtotal: "₦30,000",
@@ -227,7 +227,7 @@ export const toggleContent = {
     saveAmount: "₦60,000",
     yearAmount: "₦360,000",
   },
-  Student: {
+  student: {
     price: "₦30,000",
     subtext: "15GB Cloud Storage, Priority Support, Order Tracking.",
     subtotal: "₦30,000",
@@ -237,7 +237,7 @@ export const toggleContent = {
     yearAmount: "₦360,000",
   },
 
-  "Business Center": {
+  "business Center": {
     price: "₦30,000",
     subtext: "15GB Cloud Storage, Priority Support, Order Tracking.",
     subtotal: "₦30,000",

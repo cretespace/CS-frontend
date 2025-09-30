@@ -1,13 +1,13 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const CustomButton = ({ text, submitFn, route, isRouting, small }: any) => {
+const CustomButton = ({ text, submitFn, route, small }: any) => {
   const router = useRouter();
 
   const handleOnClick = (e) => {
     e.preventDefault();
 
-    if (isRouting) {
+    if (route) {
       router.push(route);
     } else {
       submitFn();
@@ -19,7 +19,7 @@ const CustomButton = ({ text, submitFn, route, isRouting, small }: any) => {
       onClick={handleOnClick}
       className={`${
         small ? "h-[25.28px] w-[95.52px]" : "h-[45px] "
-      } bg-[#2FC22B] flex items-center justify-center py-[15px] px-[10px] rounded-[10px]`}
+      } cursor-pointer bg-[#2FC22B] flex items-center justify-center py-[15px] px-[10px] rounded-[10px]`}
     >
       <p
         className={`font-[500] ${

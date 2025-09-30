@@ -13,23 +13,23 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Page = () => {
-  const [accountType, setAccountType] = useState("Individual");
+  const [accountType, setAccountType] = useState("individual");
 
   useEffect(() => {
-    const cookieType = Cookies.get("accountType");
+    const cookieType = Cookies.get("account-type");
     if (cookieType) {
       setAccountType(cookieType);
     }
   }, []);
 
   let signupInfo;
-  if (accountType === "Individual") {
+  if (accountType === "individual") {
     signupInfo = individualSignupInfo;
-  } else if (accountType === "Business") {
+  } else if (accountType === "business") {
     signupInfo = businessSignupInfo;
-  } else if (accountType === "Student") {
+  } else if (accountType === "student") {
     signupInfo = studentSignupInfo;
-  } else if (accountType === "Business Center") {
+  } else if (accountType === "business-Center") {
     signupInfo = bCenterSignupInfo;
   }
 

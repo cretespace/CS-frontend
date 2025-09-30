@@ -24,7 +24,7 @@ const page = () => {
           {/* top */}
           <div className="lg:flex gap-[14px]">
             {/* top - left - hero banner */}
-            <div className="bg-[#2FC22B] relative pt-[24px] px-[15px] flex  flex-wrap justify-between w-full  min-h-[165px] rounded-[10px]">
+            <div className="bg-[#2FC22B] relative pt-[24px] px-[15px] flex  flex-wrap justify-between w-full  h-[165px] rounded-[10px]">
               <div className="space-y-[24px]">
                 <p className="text-[24px] ">
                   Welcome Back, <span className="font-[700] ">Favour</span>
@@ -42,21 +42,21 @@ const page = () => {
                 </div>
               </div>
               <Icon
-                style="absolute right-[38px] -top-5"
+                style="absolute z-30 right-[38px] -top-5"
                 src="/dash/woman.svg"
                 h={645.92}
                 w={142.02}
               />
               <Icon
-                style="object-cover "
+                style="absolute -right-5 z-20 top-0 object-cover "
                 src="/dash/images/hd.svg"
-                h={245.92}
-                w={102.02}
+                h={355.92}
+                w={202.02}
               />
             </div>
 
             {/* top - left - 2  ads section*/}
-            <Card className="lg:w-[39%] min-h-[165px] py-6 mt-5 lg:mt-0">
+            <Card className="lg:w-[39%] h-[165px] py-6 mt-5 lg:mt-0">
               {/* header */}
               <div className="flex -mt-4 px-2 mb-2 justify-between items-center">
                 <p className="text-[#A2FF9F] font-[400]">Featured Designs</p>
@@ -94,6 +94,7 @@ const page = () => {
             <div className="lg:flex gap-[10.05px] ">
               {quickActions.map((item, index) => (
                 <div
+                  key={index}
                   className={`${item.bgColor} flex items-center min-h-[73.37px] my-5 lg:my-0 lg:w-1/4 py-[12.06px] px-[15.1px] gap-[10.05px] rounded-[15.08px]`}
                 >
                   <Icon w={47} h={45} src={item.icon} />

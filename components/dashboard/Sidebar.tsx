@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Card, Logo } from "../ui/ReusableComponents";
-import { dashboardNav } from "@/constants/dashboard";
+import { businessNav, individualNav, studentNav } from "@/constants/dashboard";
 import Icon from "../ui/Icon";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -11,11 +11,25 @@ import CustomButton from "../ui/CustomButton";
 const Sidebar = () => {
   const [isDropdownClicked, setIsDropdownClicked] = useState(false);
   const pathname = usePathname();
+
+  let sidebarItems;
+  if (pathname.includes("individual")) {
+    sidebarItems = individualNav;
+  } else if (pathname.includes("business")) {
+    sidebarItems = businessNav;
+  } else if (pathname.includes("student")) {
+    sidebarItems = studentNav;
+  } else {
+    sidebarItems = individualNav;
+  }
   return (
     <div className="px-[22px] py-[18px] hidden lg:block fixed overflow-scroll h-screen scroll-hide top-[12px] w-[206px] overflow-y-auto left-[12px] rounded-[10px] border-[1px] border-white/5 bg-[#141414]">
-      <Logo />
+      <div className="flex justify-between">
+        <Logo />
+        <Icon src="/dash/toggle.svg" />
+      </div>
       <div className="space-y-[16px] mt-[44px]">
-        {dashboardNav.map((item, index) => (
+        {sidebarItems.map((item, index) => (
           <div key={index} className="space-y-[14px]">
             <div
               className={`-mx-[22px] cursor-pointer h-[38px] items-center px-[22px] flex gap-[12px]  py-[10.86px] ${
@@ -24,6 +38,8 @@ const Sidebar = () => {
                 item.name === "My Orders"
                   ? "border-t-[0.5px] border-white/10 pt-8"
                   : "rounded-[5px] "
+              } ${item.name === "Billing & Subscription" && ""} ${
+                item.name === "Company Settings" && ""
               }`}
             >
               <Icon src={item.icon} w={18} h={18} />
@@ -73,18 +89,20 @@ const Sidebar = () => {
         ))}
       </div>
 
-      <div className="relative mt-[70px] mb-7 h-[151px] w-[162px] flex flex-col gap-[6px] justify-center items-center   bg-[#1B1A1A] rounded-[8px] border-[0.5px]  border-white/10">
-        <p className="text-center text-[10px] font-inter mt-8 w-[80%] text-white/70">
-          Upgrade now and enjoy exclusive benefits
-        </p>
-        <CustomButton text="Go Premium" small />
-        <Icon
-          style="absolute bottom-[6rem]"
-          src="/dash/images/rocket.svg"
-          w={78.09}
-          h={98.19}
-        />
-      </div>
+      {pathname.includes("individual") && (
+        <div className="relative mt-[100px] mb-7 h-[151px] w-[162px] flex flex-col gap-[6px] justify-center items-center   bg-[#1B1A1A] rounded-[8px] border-[0.5px]  border-white/10">
+          <p className="text-center text-[10px] font-inter mt-8 w-[80%] text-white/70">
+            Upgrade now and enjoy exclusive benefits
+          </p>
+          <CustomButton text="Go Premium" small />
+          <Icon
+            style="absolute bottom-[6rem]"
+            src="/dash/images/rocket.svg"
+            w={78.09}
+            h={98.19}
+          />
+        </div>
+      )}
     </div>
   );
 };

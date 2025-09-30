@@ -2,10 +2,13 @@ import React from "react";
 import Icon from "../ui/Icon";
 import FormInput from "../ui/FormInput";
 import CustomButton from "../ui/CustomButton";
+import Cookies from "js-cookie";
+// type FormInputProps = {
+//   typesting: String;
+// };
 
-type FormInputProps = {};
-
-const CheckoutForm = ({}: FormInputProps) => {
+const CheckoutForm = () => {
+  const type = Cookies.get("account-type");
   return (
     <section className="p-10 w-[481px] bg-[linear-gradient(to_bottom,#000000_10%,#0A4512D9_85%,#0A4512D9_100%)] rounded-[18.94px] flex flex-col gap-[28px] border-[0.95px] border-[#0C520A80]">
       <div className="flex flex-col gap-[18px]">
@@ -88,7 +91,7 @@ const CheckoutForm = ({}: FormInputProps) => {
           </p>
         </div>
 
-        <CustomButton text="Subscribe" route="/dashboard" isRouting />
+        <CustomButton text="Subscribe" route={`/dashboard/${type}`} isRouting />
       </form>
     </section>
   );
