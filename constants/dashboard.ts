@@ -1,4 +1,5 @@
-// ------------------ individual -------------------------- //
+// ---------------------------------- individual -------------------------- //
+
 export const individualNav = [
   {
     name: "Dashboard",
@@ -266,7 +267,7 @@ export const cloud = [
   },
 ];
 
-// -------------------- BUSINESS ---------------------------- //
+// ---------------------------------- BUSINESS ------------------------------- //
 export const stats = [
   {
     title: "Active Requests",
@@ -460,5 +461,83 @@ export const usage = [
     icon: "/dash/business/agent.svg",
     text: "Hours of Agent Collaboration",
     value: "72 hours",
+  },
+];
+
+// ------------------------------------- STUDENT ------------------------------------ //
+
+export const taskFeed = [
+  {
+    icon: "/dash/recent/print.svg",
+    title: "Assignment orders",
+    subtitle: "Due in 2d 5h",
+    status: "In Progress",
+    progress: 65,
+    progressBar: "/dash/recent/pro1.svg",
+  },
+  {
+    icon: "/dash/recent/bro.svg",
+    title: "Design jobs",
+    subtitle: "Due in 6d 2h",
+    status: "Assigned",
+    progress: 23,
+    progressBar: "/dash/recent/pro2.svg",
+  },
+  {
+    icon: "/dash/business/update.svg",
+    title: "Library Work",
+    subtitle: "Delivered 2h ago",
+    status: "New Task",
+    progress: 0,
+    progressBar: "/dash/recent/pro3.svg",
+  },
+  {
+    icon: "/dash/business/bar-chart-blue.svg",
+    title: "Edit requests",
+    subtitle: "Due in 1w 2d",
+    status: "Delivered",
+    progress: 100,
+    progressBar: "/dash/recent/pro4.svg",
+  },
+  {
+    icon: "/dash/business/sm-flyer.svg",
+    title: "File Conversions",
+    subtitle: "Due in 3d 2h",
+    status: "In Progress",
+    progress: 45,
+    progressBar: "/dash/recent/pro5.svg",
+  },
+];
+
+export const selfServiceTools = [
+  {
+    icon: "/dash/student/tools/typing.svg",
+    title: "Typing Tool",
+    subtitle: "Paste text: convert to print-ready format",
+  },
+  {
+    icon: "/dash/student/tools/file.svg",
+    title: "File Conversion",
+    subtitle: "PDF Word, Image to PDF",
+  },
+  {
+    icon: "/dash/student/tools/printing.svg",
+    title: "Remote Printing",
+    subtitle: "Upload a file to print (school, hostel).",
+  },
+  {
+    icon: "/dash/student/tools/graphic.svg",
+    title: "Basic Graphic Design",
+    subtitle: "Create simple posters, flyers, etc",
+  },
+  {
+    icon: "/dash/student/tools/scan.svg",
+    title: "Scan and Extract",
+    subtitle: "Upload a photo/scan; extract text or edit",
+  },
+  {
+    icon: "/dash/student/tools/format.svg",
+    title: "Auto Format Tool",
+    subtitle: "APA, MLA, Harvard citation formatting",
   },
 ];

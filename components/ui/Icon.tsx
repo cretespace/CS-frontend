@@ -8,7 +8,7 @@ const Icon = ({ w, h, src, style }: any) => {
       height={h || 26}
       src={src || "/signUp/checkbox.svg"}
       alt="img"
-      className={`${style}`}
+      className={`${style} `}
     />
   );
 };

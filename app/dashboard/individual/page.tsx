@@ -1,3 +1,4 @@
+import DownloadApp from "@/components/ui/DownloadApp";
 import Icon from "@/components/ui/Icon";
 import { Card } from "@/components/ui/ReusableComponents";
 import {
@@ -56,36 +57,7 @@ const page = () => {
             </div>
 
             {/* top - left - 2  ads section*/}
-            <Card className="lg:w-[39%] h-[165px] py-6 mt-5 lg:mt-0">
-              {/* header */}
-              <div className="flex -mt-4 px-2 mb-2 justify-between items-center">
-                <p className="text-[#A2FF9F] font-[400]">Featured Designs</p>
-                <div className="flex gap-3">
-                  <Icon src="/dash/left2.svg" w={5} h={2.78} />
-                  <Icon src="/dash/right.svg" w={6.14} h={3.78} />
-                </div>
-              </div>
-              {/* body */}
-              <div className="flex gap-1 px-2 border-y-[1px] py-1  border-white/20">
-                {featuredDesigns.map((item, index) => (
-                  <Icon
-                    style="max-w-[57px]"
-                    key={index}
-                    src={item}
-                    w={57.44}
-                    h={96.15}
-                  />
-                ))}
-              </div>
-              {/* bottom */}
-              <p className="font-inter px-2 text-[10px] text-white/70 -mb-4 mt-2">
-                Need something similar?
-                <span className="font-[500] text-[#2FC22B] pt-10">
-                  {" "}
-                  Order Here
-                </span>
-              </p>
-            </Card>
+            <DownloadApp />
           </div>
 
           {/* center - quick actions*/}
@@ -151,7 +123,7 @@ const page = () => {
 
       {/* bottoom of full page */}
       <div className="lg:flex gap-7">
-        {/* bottom - services*/}
+        {/* bottom - top services*/}
         <div className="space-y-[18px] flex-[0.7]">
           <p className="text-[#A2FF9F] font-[500]">Services</p>
 

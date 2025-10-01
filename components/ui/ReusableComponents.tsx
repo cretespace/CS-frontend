@@ -49,15 +49,19 @@ export const CloudLibrary = (student) => {
   return (
     <div
       className={`flex-[0.3] ${
-        student ? "space-y-[10px]" : "space-y-[18px] mt-[20px]"
+        student ? "space-y-[10px] h-[385px]" : "space-y-[18px] mt-[20px]"
       } `}
     >
-      <p className=" text-[#A2FF9F] font-[500]">Cloud Library</p>
+      <p className=" text-[#A2FF9F] font-[500]">
+        {student ? "Digital Backpack" : "Cloud Library"}
+      </p>
 
       <Card className="  px-[22.88px] ">
         {/* header */}
         <div className="flex justify-between  h-[59px] items-center">
-          <p className=" font-[500]">Storage Activities</p>
+          <p className=" font-[500]">
+            {student ? "My Backpack" : "Storage Activities"}
+          </p>
           <div className="flex gap-[3.22px]">
             <p className="text-[11.28px] text-white/50">View Details</p>
             <Icon src="/dash/recent/view.svg" w={12.89} h={12.89} />
